@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="Copy to clipboard" name="lang:clipboard.copy"/>
+<meta content="Copied to clipboard" name="lang:clipboard.copied"/>
+<meta content="en" name="lang:search.language"/>
+<meta content="True" name="lang:search.pipeline.stopwords"/>
+<meta content="True" name="lang:search.pipeline.trimmer"/>
+<meta content="No matching documents" name="lang:search.result.none"/>
+<meta content="1 matching document" name="lang:search.result.one"/>
+<meta content="# matching documents" name="lang:search.result.other"/>
+<meta content="[\s\-]+" name="lang:search.tokenizer"/>
+<link href="assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.0.4, mkdocs-material-4.6.3" name="generator"/>
+<title>Online Account Opening API</title>
+<link href="assets/stylesheets/application.adb8469c.css" rel="stylesheet"/>
+<link href="assets/stylesheets/application-palette.a8b3c06d.css" rel="stylesheet"/>
+<meta content="#546e7a" name="theme-color"/>
+<script src="assets/javascripts/modernizr.86422ebf.js"></script>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+<link href="assets/fonts/material-icons.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="red" data-md-color-primary="blue-grey" dir="ltr">
+<svg class="md-svg">
+<defs>
+</defs>
+</svg>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+<a class="md-skip" href="#online-account-opening-api-documentation" tabindex="0">
+        Skip to content
+      </a>
+<header class="md-header" data-md-component="header">
+<nav class="md-header-nav md-grid">
+<div class="md-flex">
+<div class="md-flex__cell md-flex__cell--shrink">
+<a aria-label="Online Account Opening API" class="md-header-nav__button md-logo" href="." title="Online Account Opening API">
+<img alt="logo" height="24" src="img/logo.svg" width="24"/>
+</a>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch">
+<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+<span class="md-header-nav__topic">
+              Online Account Opening API
+            </span>
+<span class="md-header-nav__topic">
+              
+                INTRODUCTION
+              
+            </span>
+</div>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/>
+<label class="md-icon md-search__icon" for="__search"></label>
+<button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">
+        
+      </button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="result">
+<div class="md-search-result__meta">
+            Type to start searching
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container">
+<main class="md-main" role="main">
+<div class="md-main__inner md-grid" data-md-component="container">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title md-nav__title--site" for="__drawer">
+<a class="md-nav__button md-logo" href="." title="Online Account Opening API">
+<img alt="logo" height="48" src="img/logo.svg" width="48"/>
+</a>
+    Online Account Opening API
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        INTRODUCTION
+      </label>
+<a class="md-nav__link md-nav__link--active" href="." title="INTRODUCTION">
+      INTRODUCTION
+    </a>
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#online-account-opening-api">
+    Online Account Opening API
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-account">
+    Creating Account
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="overview/" title="OVERVIEW">
+      OVERVIEW
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-3">
+      GET STARTED
+    </label>
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-3">
+        GET STARTED
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" id="nav-3-1" type="checkbox"/>
+<label class="md-nav__link" for="nav-3-1">
+      USER
+    </label>
+<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+<label class="md-nav__title" for="nav-3-1">
+        USER
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="signup/" title="SIGN UP">
+      SIGN UP
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="signin/" title="SIGN IN">
+      SIGN IN
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="upload/" title="UPLOAD DOCUMENT TO T24">
+      UPLOAD DOCUMENT TO T24
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="request/" title="REQUESTS">
+      REQUESTS
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="resetpassword/" title="RESET PASSWORD">
+      RESET PASSWORD
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="update/" title="UPDATE DETAILS">
+      UPDATE DETAILS
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="activateaccount/" title="ACCOUNT ACTIVATION">
+      ACCOUNT ACTIVATION
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="accountopening/" title="ACCOUNT OPENING">
+      ACCOUNT OPENING
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="addaccount/" title="ADD ACCOUNTS">
+      ADD ACCOUNTS
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="sendcontinuemail/" title="SEND CONTINUE MAIL">
+      SEND CONTINUE MAIL
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="generateotp/" title="GENERATE OTP">
+      GENERATE OTP
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="validateotp/" title="VALIDATE OTP">
+      VALIDATE OTP
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="pdf/" title="PDF">
+      PDF
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#online-account-opening-api">
+    Online Account Opening API
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-account">
+    Creating Account
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href="index.pdf" title="PDF Export"></a>
+<h1 id="online-account-opening-api-documentation">Online Account Opening API Documentation</h1>
+<h2 id="online-account-opening-api">Online Account Opening API</h2>
+<p>This API was created to help users create a new account easily online by proving their Bank Verification Number. The BVN end then provides the user details taking them to the next stage of the application, allowing you to open an Individual Savings or Current Account.</p>
+<p> </p>
+<p> </p>
+<p><img alt="" src="img/page-one.PNG"/></p>
+<p> </p>
+<h3 id="creating-account">Creating Account</h3>
+<p>To create an account the user will need to provide their <code>Bank Verification Number</code>, <code>Date of Birth</code>, valid <code>Email address</code>, input a <code>new password</code> and <code>confirm new password</code>. After clicking the proceed button, an email will be sent to the user once the BVN has been validated, allowing the user to move to the stage of signing up.</p>
+<p><img alt="" src="img/page-two.PNG"/></p>
+<p> </p>
+<p>The Account Opening API currently lets you open an Individual Savings and Individual Current Account.
+<img alt=" " src="img/page-three.PNG"/>.</p>
+<p> </p>
+<p> </p>
+<h1 id="online-account-opening-api-documentation_1">Online Account Opening API Documentation</h1>
+<h2 id="using-the-api">Using the API</h2>
+<p>This API is based on REST Principle which lets you create a new account with Sterling Bank. By default, all request to <code>https://pass.sterling.ng/CAMS</code> receives the <strong>v1</strong> version of the REST API.</p>
+<p> </p>
+<p><img alt="" src="img/overview.PNG"/></p>
+<p>The API access is over <code>HTTPS</code> and it is accessed from <code>https://pass.sterling.ng/CAMS</code>. All data is sent and received as JSON. The endpoints return a JSON Metadata which gives you the details of a user, provided by BVN. The API provides a set of endpoints, each with its path for creating an account.</p>
+<h3 id="request">Request</h3>
+<p>The Online Account Opening APIs are accessed through a standard HTTPS request in UTF-8. The following methods are available for this API.</p>
+<table>
+<thead>
+<tr>
+<th>METHOD</th>
+<th>ACTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><font color="green"> <strong>POST</strong> </font></td>
+<td>CREATE RESOURCES</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>The methods have the following general response scheme, methods with a different response scheme is shown below there Example requests.</p>
+<h3 id="responses-200">Responses <code>200</code></h3>
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="codehilite"><pre><span></span><code>    <span class="p">{</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"bvn"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"dateOfBirth"</span><span class="p">:</span> <span class="s2">"2019-12-11T14:51:47.739Z"</span><span class="p">,</span>
+    <span class="nt">"email"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"phoneNumber"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"address"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"country"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"state"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"progressLevel"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"isActive"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">"firstName"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"middleName"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"lastName"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"sector"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"industry"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"nationality"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"gender"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"interestedInLoanProducts"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"maritalStatus"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"numberOfChildren"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"occupation"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"hobby"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"nokFirstName"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"nokMiddleName"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"nokFullName"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"nokLastName"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"nokAddress"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"nokPhoneNumber"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"nokRelationship"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"employmentStatus"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"employerName"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"employmentAddress"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"addressTown"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"addressState"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"addressLandmark"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"accountDetails"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+        <span class="nt">"accountNumber"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"accountType"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"userId"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"customerId"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"accountName"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"currency"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"addedDate"</span><span class="p">:</span> <span class="s2">"2019-12-11T14:51:47.739Z"</span><span class="p">,</span>
+        <span class="nt">"modifiedDate"</span><span class="p">:</span> <span class="s2">"2019-12-11T14:51:47.739Z"</span><span class="p">,</span>
+        <span class="nt">"passportPhoto"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"validIdType"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"validIdNumber"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"signature"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"validId"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"reference"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"bvN_Firstname"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"bvN_Lastname"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"jointAccountTransferLimit"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">"sqNo"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">"accountLinkCode"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+        <span class="nt">"accountCategory"</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">"addedDate"</span><span class="p">:</span> <span class="s2">"2019-12-11T14:51:47.739Z"</span><span class="p">,</span>
+    <span class="nt">"modifiedDate"</span><span class="p">:</span> <span class="s2">"2019-12-11T14:51:47.739Z"</span><span class="p">,</span>
+    <span class="nt">"sessionKey"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"passportPhoto"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"validIdType"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"validIdNumber"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"signature"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"validId"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"reference"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"bvN_Firstname"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"bvN_Lastname"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"isDefaultPassword"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">"responseCode"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+    <span class="nt">"responseDescription"</span><span class="p">:</span> <span class="s2">"string"</span>
+    <span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="parameter">Parameter</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>user ID</td>
+</tr>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td>Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date</td>
+<td>Date of Birth</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>Email Address</td>
+</tr>
+<tr>
+<td><code>phoneNumber</code></td>
+<td>string</td>
+<td>Users Mobile Number</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td>Residential Address</td>
+</tr>
+<tr>
+<td><code>country</code></td>
+<td>string</td>
+<td>Country of Origin</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td>Country State</td>
+</tr>
+<tr>
+<td><code>progressLevel</code></td>
+<td>string</td>
+<td>Porgress level status</td>
+</tr>
+<tr>
+<td><code>isActive</code></td>
+<td>Boolean</td>
+<td>Active status of the user <em>(true,false)</em></td>
+</tr>
+<tr>
+<td><code>firstName</code></td>
+<td>string</td>
+<td>User first name</td>
+</tr>
+<tr>
+<td><code>middleName</code></td>
+<td>string</td>
+<td>User middle name</td>
+</tr>
+<tr>
+<td><code>lastName</code></td>
+<td>string</td>
+<td>User last name</td>
+</tr>
+<tr>
+<td><code>sector</code></td>
+<td>string</td>
+<td>Users Occupation</td>
+</tr>
+<tr>
+<td><code>industry</code></td>
+<td>string</td>
+<td>The company or industry where the user works</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td>string</td>
+<td>Nationality e.g <em>Nigerian,Ghanian,American...</em></td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>string</td>
+<td>Gender e.g <em>Male,female...</em></td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>Your name Title eg <em>Mr,Mrs,Miss</em></td>
+</tr>
+<tr>
+<td><code>interestedInLoanProducts</code></td>
+<td>string</td>
+<td>shows if user is interested in loan products or not</td>
+</tr>
+<tr>
+<td><code>maritalStatus</code></td>
+<td>string</td>
+<td>Marital status e.g <em>single,married...</em></td>
+</tr>
+<tr>
+<td><code>numberOfChildren</code></td>
+<td>string</td>
+<td>Number of Children the user have</td>
+</tr>
+<tr>
+<td><code>occupation</code></td>
+<td>string</td>
+<td>User Occupation</td>
+</tr>
+<tr>
+<td><code>hobby</code></td>
+<td>string</td>
+<td>User Hobby</td>
+</tr>
+<tr>
+<td><code>nokFirstName</code></td>
+<td>string</td>
+<td>The first name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokMiddleName</code></td>
+<td>string</td>
+<td>The Middle name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokFullName</code></td>
+<td>string</td>
+<td>The full name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokLastName</code></td>
+<td>string</td>
+<td>The last name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokAddress</code></td>
+<td>string</td>
+<td>Address of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokPhoneNumber</code></td>
+<td>string</td>
+<td>Mobile Number of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokRelationship</code></td>
+<td>string</td>
+<td>The relationship between the Next Of Kin and the user e.g <em>Mother,Father,Aunt...</em></td>
+</tr>
+<tr>
+<td><code>employmentStatus</code></td>
+<td>string</td>
+<td>Employment status of the user e.g <em>self employed,retired,student..</em></td>
+</tr>
+<tr>
+<td><code>employerName</code></td>
+<td>string</td>
+<td>Name of Employer/Company</td>
+</tr>
+<tr>
+<td><code>employmentAddress</code></td>
+<td>string</td>
+<td>Address or employment</td>
+</tr>
+<tr>
+<td><code>addressTown</code></td>
+<td>string</td>
+<td>Town where employment is located</td>
+</tr>
+<tr>
+<td><code>addressState</code></td>
+<td>string</td>
+<td>State where employment is located</td>
+</tr>
+<tr>
+<td><code>addressLandmark</code></td>
+<td>string</td>
+<td>Landmark where employment is located <em>e.g kfc</em></td>
+</tr>
+<tr>
+<td><code>accountDetails</code></td>
+<td>object</td>
+<td><em>This hows the account details of the user, details of the user can be view below this table</em></td>
+</tr>
+<tr>
+<td><code>addedDate</code></td>
+<td>date-time</td>
+<td>Date of added Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>modifiedDate</code></td>
+<td>date-time</td>
+<td>Date of modified Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>sessionKey</code></td>
+<td>string</td>
+<td>The Session key of every transaction</td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td>user passport image directory</td>
+</tr>
+<tr>
+<td><code>validIdType</code></td>
+<td>string</td>
+<td>Type of Identification <em>eg: Drivers license</em></td>
+</tr>
+<tr>
+<td><code>validIdNumber</code></td>
+<td>string</td>
+<td>Valid Identification Number</td>
+</tr>
+<tr>
+<td><code>signature</code></td>
+<td>string</td>
+<td>User signature</td>
+</tr>
+<tr>
+<td><code>validId</code></td>
+<td>string</td>
+<td>Image directory of Valid Identifiaction</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>string</td>
+<td>the reference form file</td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>isDefaultPassword</code></td>
+<td>true</td>
+<td>Default Password status</td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>The response result message</td>
+</tr>
+</tbody>
+</table>
+<p>List of objects under <code>accountDetails</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>accountType</code></td>
+<td>string</td>
+<td>Account Type e.g <em>saving, current...</em></td>
+</tr>
+<tr>
+<td><code>userId</code></td>
+<td>string</td>
+<td>User ID number</td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td>customers ID number</td>
+</tr>
+<tr>
+<td><code>accountName</code></td>
+<td>string</td>
+<td>Name of Account</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>Currency e.g <em>Naira, Dollars...</em></td>
+</tr>
+<tr>
+<td><code>addedDate</code></td>
+<td>date-time</td>
+<td>Date of added Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>modifiedDate</code></td>
+<td>date-time</td>
+<td>Date of modified Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td>account passport image directory</td>
+</tr>
+<tr>
+<td><code>validIdType</code></td>
+<td>string</td>
+<td>Type of Identification <em>eg: Drivers license</em></td>
+</tr>
+<tr>
+<td><code>validIdNumber</code></td>
+<td>string</td>
+<td>Valid Identification Number</td>
+</tr>
+<tr>
+<td><code>validId</code></td>
+<td>string</td>
+<td>Image directory of Valid Identifiaction</td>
+</tr>
+<tr>
+<td><code>signature</code></td>
+<td>string</td>
+<td>User signature</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>string</td>
+<td>The reference form file</td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td>Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>sqNo</code></td>
+<td>integer <code>int32</code></td>
+<td>sequential number showing per beneficiary (Depends on how many beneficiary added)</td>
+</tr>
+<tr>
+<td><code>accountLinkCode</code></td>
+<td>string</td>
+<td>code number for linking account for joint account</td>
+</tr>
+<tr>
+<td><code>accountCategory</code></td>
+<td>number</td>
+<td>Account Category</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav class="md-footer-nav__inner md-grid">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="overview/" rel="next" title="OVERVIEW">
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
+                  Next
+                </span>
+                OVERVIEW
+              </span>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" rel="noopener" target="_blank">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="assets/javascripts/application.c33a9706.js"></script>
+<script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+</body>
+</html>
