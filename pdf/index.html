@@ -1,0 +1,4635 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Online Account Opening API Documentation - Online Account Opening API</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#546d78">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue-grey" data-md-color-accent="red">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#online-account-opening-api-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Online Account Opening API" class="md-header-nav__button md-logo" aria-label="Online Account Opening API">
+      
+  <img src="../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Online Account Opening API
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Online Account Opening API Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Online Account Opening API" class="md-nav__button md-logo" aria-label="Online Account Opening API">
+      
+  <img src="../img/logo.svg" alt="logo">
+
+    </a>
+    Online Account Opening API
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        INTRODUCTION
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        OVERVIEW
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        GET STARTED
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="GET STARTED" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          GET STARTED
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" >
+      
+      <label class="md-nav__link" for="nav-3-1">
+        USER
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="USER" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-1">
+          <span class="md-nav__icon md-icon"></span>
+          USER
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signup/" class="md-nav__link">
+        SIGN UP
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signin/" class="md-nav__link">
+        SIGN IN
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#online-account-opening-api" class="md-nav__link">
+    Online Account Opening API
+  </a>
+  
+    <nav class="md-nav" aria-label="Online Account Opening API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-account" class="md-nav__link">
+    Creating Account
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="online-account-opening-api-documentation">Online Account Opening API Documentation</h1>
+<h2 id="online-account-opening-api">Online Account Opening API</h2>
+<p>This API was created to help users create a new account easily online by proving their Bank Verification Number. The BVN end then provides the user details taking them to the next stage of the application, allowing you to open an Individual Savings or Current Account.</p>
+<p>&nbsp;</p>
+
+<p><img alt="" src="../img/page-one.PNG" /></p>
+<p>&nbsp;</p>
+
+<h3 id="creating-account">Creating Account</h3>
+<p>To create an account the user will need to provide their <code>Bank Verification Number</code>, <code>Date of Birth</code>, valid <code>Email address</code>, input a <code>new password</code> and <code>confirm new password</code>. After clicking the proceed button, an email will be sent to the user once the BVN has been validated, allowing the user to move to the stage of signing up.</p>
+<p><img alt="" src="../img/page-two.PNG" /></p>
+<p>&nbsp;</p>
+
+<p>The Account Opening API currently lets you open an Individual Savings and Individual Current Account.
+<img alt=" " src="../img/page-three.PNG" />.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h1 id="online-account-opening-api-documentation_1">Online Account Opening API Documentation</h1>
+<h2 id="using-the-api">Using the API</h2>
+<p>This API is based on REST Principle which lets you create a new account with Sterling Bank. By default, all request to <code>https://pass.sterling.ng/CAMS</code> receives the <strong>v1</strong> version of the REST API.</p>
+<p>&nbsp;</p>
+
+<p><img alt="" src="../img/overview.PNG" /></p>
+<p>The API access is over <code>HTTPS</code> and it is accessed from <code>https://pass.sterling.ng/CAMS</code>. All data is sent and received as JSON. The endpoints return a JSON Metadata which gives you the details of a user, provided by BVN. The API provides a set of endpoints, each with its path for creating an account.</p>
+<h3 id="request">Request</h3>
+<p>The Online Account Opening APIs are accessed through a standard HTTPS request in UTF-8. The following methods are available for this API.</p>
+<table>
+<thead>
+<tr>
+<th>METHOD</th>
+<th>ACTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><font color="green"> <strong>POST</strong> </font></td>
+<td>CREATE RESOURCES</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<p>The methods have the following general response scheme, methods with a different response scheme is shown below there Example requests.</p>
+<h3 id="responses-200">Responses <code>200</code></h3>
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;progressLevel&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isActive&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;middleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sector&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;industry&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nationality&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;interestedInLoanProducts&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;maritalStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;numberOfChildren&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;occupation&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;hobby&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokFirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokMiddleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokFullName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokLastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokPhoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokRelationship&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employmentStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employerName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employmentAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressTown&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressState&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressLandmark&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountDetails&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+        <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;accountType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;customerId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;addedDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;modifiedDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;passportPhoto&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;validIdType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;validIdNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;validId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;sqNo&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;accountLinkCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;accountCategory&quot;</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;addedDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;modifiedDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;passportPhoto&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validIdType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validIdNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isDefaultPassword&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="parameter">Parameter</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>user ID</td>
+</tr>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td>Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date</td>
+<td>Date of Birth</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>Email Address</td>
+</tr>
+<tr>
+<td><code>phoneNumber</code></td>
+<td>string</td>
+<td>Users Mobile Number</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td>Residential Address</td>
+</tr>
+<tr>
+<td><code>country</code></td>
+<td>string</td>
+<td>Country of Origin</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td>Country State</td>
+</tr>
+<tr>
+<td><code>progressLevel</code></td>
+<td>string</td>
+<td>Porgress level status</td>
+</tr>
+<tr>
+<td><code>isActive</code></td>
+<td>Boolean</td>
+<td>Active status of the user <em>(true,false)</em></td>
+</tr>
+<tr>
+<td><code>firstName</code></td>
+<td>string</td>
+<td>User first name</td>
+</tr>
+<tr>
+<td><code>middleName</code></td>
+<td>string</td>
+<td>User middle name</td>
+</tr>
+<tr>
+<td><code>lastName</code></td>
+<td>string</td>
+<td>User last name</td>
+</tr>
+<tr>
+<td><code>sector</code></td>
+<td>string</td>
+<td>Users Occupation</td>
+</tr>
+<tr>
+<td><code>industry</code></td>
+<td>string</td>
+<td>The company or industry where the user works</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td>string</td>
+<td>Nationality e.g <em>Nigerian,Ghanian,American...</em></td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>string</td>
+<td>Gender e.g <em>Male,female...</em></td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>Your name Title eg <em>Mr,Mrs,Miss</em></td>
+</tr>
+<tr>
+<td><code>interestedInLoanProducts</code></td>
+<td>string</td>
+<td>shows if user is interested in loan products or not</td>
+</tr>
+<tr>
+<td><code>maritalStatus</code></td>
+<td>string</td>
+<td>Marital status e.g <em>single,married...</em></td>
+</tr>
+<tr>
+<td><code>numberOfChildren</code></td>
+<td>string</td>
+<td>Number of Children the user have</td>
+</tr>
+<tr>
+<td><code>occupation</code></td>
+<td>string</td>
+<td>User Occupation</td>
+</tr>
+<tr>
+<td><code>hobby</code></td>
+<td>string</td>
+<td>User Hobby</td>
+</tr>
+<tr>
+<td><code>nokFirstName</code></td>
+<td>string</td>
+<td>The first name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokMiddleName</code></td>
+<td>string</td>
+<td>The Middle name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokFullName</code></td>
+<td>string</td>
+<td>The full name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokLastName</code></td>
+<td>string</td>
+<td>The last name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokAddress</code></td>
+<td>string</td>
+<td>Address of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokPhoneNumber</code></td>
+<td>string</td>
+<td>Mobile Number of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokRelationship</code></td>
+<td>string</td>
+<td>The relationship between the Next Of Kin and the user e.g <em>Mother,Father,Aunt...</em></td>
+</tr>
+<tr>
+<td><code>employmentStatus</code></td>
+<td>string</td>
+<td>Employment status of the user e.g <em>self employed,retired,student..</em></td>
+</tr>
+<tr>
+<td><code>employerName</code></td>
+<td>string</td>
+<td>Name of Employer/Company</td>
+</tr>
+<tr>
+<td><code>employmentAddress</code></td>
+<td>string</td>
+<td>Address or employment</td>
+</tr>
+<tr>
+<td><code>addressTown</code></td>
+<td>string</td>
+<td>Town where employment is located</td>
+</tr>
+<tr>
+<td><code>addressState</code></td>
+<td>string</td>
+<td>State where employment is located</td>
+</tr>
+<tr>
+<td><code>addressLandmark</code></td>
+<td>string</td>
+<td>Landmark where employment is located <em>e.g kfc</em></td>
+</tr>
+<tr>
+<td><code>accountDetails</code></td>
+<td>object</td>
+<td><em>This hows the account details of the user, details of the user can be view below this table</em></td>
+</tr>
+<tr>
+<td><code>addedDate</code></td>
+<td>date-time</td>
+<td>Date of added Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>modifiedDate</code></td>
+<td>date-time</td>
+<td>Date of modified Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>sessionKey</code></td>
+<td>string</td>
+<td>The Session key of every transaction</td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td>user passport image directory</td>
+</tr>
+<tr>
+<td><code>validIdType</code></td>
+<td>string</td>
+<td>Type of Identification <em>eg: Drivers license</em></td>
+</tr>
+<tr>
+<td><code>validIdNumber</code></td>
+<td>string</td>
+<td>Valid Identification Number</td>
+</tr>
+<tr>
+<td><code>signature</code></td>
+<td>string</td>
+<td>User signature</td>
+</tr>
+<tr>
+<td><code>validId</code></td>
+<td>string</td>
+<td>Image directory of Valid Identifiaction</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>string</td>
+<td>the reference form file</td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>isDefaultPassword</code></td>
+<td>true</td>
+<td>Default Password status</td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>The response result message</td>
+</tr>
+</tbody>
+</table>
+<p>List of objects under <code>accountDetails</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>accountType</code></td>
+<td>string</td>
+<td>Account Type e.g <em>saving, current...</em></td>
+</tr>
+<tr>
+<td><code>userId</code></td>
+<td>string</td>
+<td>User ID number</td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td>customers ID number</td>
+</tr>
+<tr>
+<td><code>accountName</code></td>
+<td>string</td>
+<td>Name of Account</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>Currency e.g <em>Naira, Dollars...</em></td>
+</tr>
+<tr>
+<td><code>addedDate</code></td>
+<td>date-time</td>
+<td>Date of added Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>modifiedDate</code></td>
+<td>date-time</td>
+<td>Date of modified Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td>account passport image directory</td>
+</tr>
+<tr>
+<td><code>validIdType</code></td>
+<td>string</td>
+<td>Type of Identification <em>eg: Drivers license</em></td>
+</tr>
+<tr>
+<td><code>validIdNumber</code></td>
+<td>string</td>
+<td>Valid Identification Number</td>
+</tr>
+<tr>
+<td><code>validId</code></td>
+<td>string</td>
+<td>Image directory of Valid Identifiaction</td>
+</tr>
+<tr>
+<td><code>signature</code></td>
+<td>string</td>
+<td>User signature</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>string</td>
+<td>The reference form file</td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td>Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>sqNo</code></td>
+<td>integer <code>int32</code></td>
+<td>sequential number showing per beneficiary (Depends on how many beneficiary added)</td>
+</tr>
+<tr>
+<td><code>accountLinkCode</code></td>
+<td>string</td>
+<td>code number for linking account for joint account</td>
+</tr>
+<tr>
+<td><code>accountCategory</code></td>
+<td>number</td>
+<td>Account Category</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="sign-up"><strong>Sign Up</strong></h1>
+<div class="highlight"><pre><span></span><code>POST /api/User/SignUp
+</code></pre></div>
+<h2 id="user-signup">User SignUp</h2>
+<p>Create new user account using the following parameters, Sign Up Request Model</p>
+<h3 id="request-model">Request Model</h3>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here are the object to be pass for signUp.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-02-18T09:08:19.073Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;initialAccountSelected&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;preferredName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These objects need to be passed before the next process of Signing up can proceed. The <code>bvn</code> gets the users the necessary details.</p>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Your Bank verification Number</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red"> *required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Clients email address</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client password for new Account</td>
+</tr>
+<tr>
+<td><code>initialAccountSelected</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users initial selected account</td>
+</tr>
+<tr>
+<td><code>preferredName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Preffered Account Name</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="sign-up-with-email"><strong>Sign Up With Email</strong></h1>
+<p><div class="highlight"><pre><span></span><code>  POST /api/User/SignUpWithEmail
+</code></pre></div>
+&amp; Mobile Version 
+<div class="highlight"><pre><span></span><code>POST /api/User/SignUpWithEmailForMobile
+</code></pre></div></p>
+<p>Create new user account with email using the following parameters, Sign Up Request Model</p>
+<h3 id="request-model_1">Request Model</h3>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here are the object to be pass for signUp.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;preferredName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;initialAccountSelected&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;referralCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;clientID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Clients email address</td>
+</tr>
+<tr>
+<td><code>preferredName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Preffered Account Name</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client password for new Account</td>
+</tr>
+<tr>
+<td><code>initialAccountSelected</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users initial selected account</td>
+</tr>
+<tr>
+<td><code>referralCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> user referral Code</td>
+</tr>
+<tr>
+<td><code>clientID</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client Identification Number</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="sign-in"><strong>Sign In</strong></h1>
+<div class="highlight"><pre><span></span><code>POST /api/User/SignIn
+</code></pre></div>
+<h2 id="user-signin">User SignIn</h2>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here are the object to passed for signIn.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;oldPassword&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Clients email address</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client password for new Account</td>
+</tr>
+<tr>
+<td><code>oldPassword</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users old password for signing in to Account</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="fetch-signed-in-user-details"><strong>Fetch Signed In User Details</strong></h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/FetchSignedInUserDetails
+</code></pre></div>
+This method fetches the user details of the user after it the account has been signed in.  </p>
+<p>Example Value
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>&nbsp;</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users email address</td>
+</tr>
+<tr>
+<td><code>sessionKey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key of every transaction which <code>expires in one hour</code></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="fiorano"><strong>Fiorano</strong></h1>
+<h2 id="get-fiorano-account-full-information">Get Fiorano Account Full Information</h2>
+<div class="highlight"><pre><span></span><code>GET /api/User/FioranoGetAccountFullInfo
+</code></pre></div>
+<h2 id="get-fiorano-states">Get Fiorano States</h2>
+<div class="highlight"><pre><span></span><code>GET /api/User/FioranoGetStates
+</code></pre></div>
+<h2 id="get-fiorano-branchess">Get Fiorano Branchess</h2>
+<div class="highlight"><pre><span></span><code>GET /api/User/FioranoGetBranches
+</code></pre></div>
+<p>&nbsp;</p>
+
+<h1 id="sterling"><strong>Sterling</strong></h1>
+<h2 id="get-sterling-branches">Get Sterling Branches</h2>
+<div class="highlight"><pre><span></span><code>GET /api/User/GetSterlingBranches
+</code></pre></div>
+<p>&nbsp;</p>
+
+<h2 id="get-sterling-branches-bt-state-identification-number">Get Sterling Branches Bt State Identification Number</h2>
+<div class="highlight"><pre><span></span><code>GET /api/User/GetSterlingBranchesByStateID
+</code></pre></div>
+<p>&nbsp;</p>
+
+<h1 id="reference"><strong>Reference</strong></h1>
+<h2 id="camu-ereference">CAMU EReference</h2>
+<div class="highlight"><pre><span></span><code>POST /api/User/CAMUEReference
+</code></pre></div>
+<p>Provide CAMU EReference details.</p>
+<h3 id="request-model_2">Request Model</h3>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here are the object to be pass for CAMU EReference.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;Account Currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Account Name&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Account Number&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Branch Code&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;product_Type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;customer_ID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;date_Account_Opened&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;referee_Bank&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;referee_Account_Number&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;referee_Name&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These objects need to be passed before the next process of Signing up can proceed. The <code>bvn</code> gets the users the necessary details.</p>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Account Currency</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Currenty of Account eg NGN, USD</td>
+</tr>
+<tr>
+<td><code>Account Name</code></td>
+<td>string</td>
+<td><font color="red"> *required</font><br> Name of Account</td>
+</tr>
+<tr>
+<td><code>Account Number"</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Account Number</td>
+</tr>
+<tr>
+<td><code>Branch Code</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Branch Code</td>
+</tr>
+<tr>
+<td><code>customer_ID</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Customer Identification</td>
+</tr>
+<tr>
+<td><code>date_Account_Opened</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Date the account was opened</td>
+</tr>
+<tr>
+<td><code>referee_Bank</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Name of referenced bank</td>
+</tr>
+<tr>
+<td><code>referee_Account_Number</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The account number of referenced bank</td>
+</tr>
+<tr>
+<td><code>referee_Name</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>The Account Name of The Referee</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="upload-files"><strong>Upload Files</strong></h1>
+<h2 id="upload-document-to-t24">Upload Document To T24</h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/UploadDocumentToT24
+</code></pre></div>
+This method passes the following users documents to T24.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here are the object to pass to T24.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;document&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;compcode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;customerid&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;signatoryClass&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;mandateDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;signatoryShortName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;signatoryName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<h3 id="parameters_4">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>document</code></td>
+<td>object</td>
+<td><font color="red">*required</font><br>The <code>Document</code> contains list of objects to be passed below and their description</td>
+</tr>
+<tr>
+<td><code>compcode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>T24 Company Code</td>
+</tr>
+<tr>
+<td><code>customerid</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>T24 Customer Id</td>
+</tr>
+<tr>
+<td><code>signatoryClass</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Class of Signatory</td>
+</tr>
+<tr>
+<td><code>mandateDesc</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Description of Mandate</td>
+</tr>
+<tr>
+<td><code>signatoryShortName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Short name Of Customer</td>
+</tr>
+<tr>
+<td><code>signatoryName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Full Customer Name</td>
+</tr>
+<tr>
+<td><code>filename</code></td>
+<td>string</td>
+<td><font color="red"><em>required</font><br>Upload File Name (has to be of file format </em><em>.jpg</em>*)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">result (success)</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseText&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">result (error)</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseText&quot;</span><span class="p">:</span> <span class="s2">&quot;IMAGE.REFERENCE:1:1=MISSING CUSTOMER - RECORD, IMAGE.REFERENCE:1:1=INPUT MISSING&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+</tr>
+<tr>
+<td><code>responseId</code></td>
+<td>string</td>
+<td>The response result Id</td>
+</tr>
+<tr>
+<td><code>responseText</code></td>
+<td>string</td>
+<td>The response result Description eg <em>Success</em></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="upload-image-to-azure">Upload Image to Azure</h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/UploadImageToAzure
+</code></pre></div>
+This method passes the following users upload image to Azure.</p>
+<div class="admonition example request">
+<p class="admonition-title">Example</p>
+<p>Here are the object to pass to T24.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;appId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;folderName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;fileName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;base64String&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<h3 id="parameters_5">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>appId</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Application Identification Number</td>
+</tr>
+<tr>
+<td><code>folderName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Name of folder</td>
+</tr>
+<tr>
+<td><code>fileName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Name of File</td>
+</tr>
+<tr>
+<td><code>base64String</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>base64 Encrypted String</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="upload-image-to-azure-with-a-response-code">Upload Image to Azure With a Response Code</h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/UploadImageToAzureWithResponseCode
+</code></pre></div>
+This method passes the following users upload image to Azure.</p>
+<div class="admonition example request">
+<p class="admonition-title">Example</p>
+<p>Here are the object to pass to T24.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;appId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;folderName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;fileName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;base64String&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<h3 id="parameters_6">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>appId</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Application Identification Number</td>
+</tr>
+<tr>
+<td><code>folderName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Name of folder</td>
+</tr>
+<tr>
+<td><code>fileName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Name of File</td>
+</tr>
+<tr>
+<td><code>base64String</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>base64 Encrypted String</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseText&quot;</span><span class="p">:</span> <span class="s2">&quot;IMAGE.REFERENCE:1:1=MISSING CUSTOMER - RECORD, IMAGE.REFERENCE:1:1=INPUT MISSING&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td>string</td>
+<td>response url</td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+</tr>
+<tr>
+<td><code>responseText</code></td>
+<td>string</td>
+<td>The response result Description eg <em>Success</em></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="upload-document-to-camu">Upload Document To CAMU</h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/UploadDocumentToT24
+</code></pre></div>
+This method passes the following users documents to T24.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here are the object to pass to T24.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;folio&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dataFields&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;branchCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;disContactPersonAdd&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;disContactPersonMobile&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;disContactPersonName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;dob&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;middleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;mobileNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;residentialAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlMeansOfID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlOther&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlPhotoID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;addState&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlReference1&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlReference2&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlMandate&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<h3 id="parameters_7">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>folio</code></td>
+<td>object</td>
+<td>portfolio group where the request belong to on 1Xpress. eg one bank, specta, etc</td>
+</tr>
+<tr>
+<td><code>accountName</code></td>
+<td>string</td>
+<td>Name of users account</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td>Account number</td>
+</tr>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td>Bank Verfication Number</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>string</td>
+<td>source of the request e.g one bank , specta</td>
+</tr>
+<tr>
+<td><code>disContactPersonAdd</code></td>
+<td>string</td>
+<td>Add disContact person</td>
+</tr>
+<tr>
+<td><code>disContactPersonMobile</code></td>
+<td>string</td>
+<td>disContact Person Mobile number</td>
+</tr>
+<tr>
+<td><code>disContactPersonName</code></td>
+<td>string</td>
+<td>DisContact person name</td>
+</tr>
+<tr>
+<td><code>dob</code></td>
+<td>string</td>
+<td>Date Of Birth</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td>Email Address</td>
+</tr>
+<tr>
+<td><code>firstName</code></td>
+<td>string</td>
+<td>Account First Name</td>
+</tr>
+<tr>
+<td><code>lastName</code></td>
+<td>string</td>
+<td>Account Last Name</td>
+</tr>
+<tr>
+<td><code>middleName</code></td>
+<td>string</td>
+<td>Account Middle Name</td>
+</tr>
+<tr>
+<td><code>mobileNumber</code></td>
+<td>string</td>
+<td>Account Mobile number</td>
+</tr>
+<tr>
+<td><code>residentialAddress</code></td>
+<td>string</td>
+<td>Users ressidential address</td>
+</tr>
+<tr>
+<td><code>urlMeansOfID</code></td>
+<td>string</td>
+<td>link to means of Idenfication</td>
+</tr>
+<tr>
+<td><code>urlOther</code></td>
+<td>string</td>
+<td>Other available link</td>
+</tr>
+<tr>
+<td><code>urlPhotoID</code></td>
+<td>string</td>
+<td>Link to Photo identification</td>
+</tr>
+<tr>
+<td><code>addState</code></td>
+<td>string</td>
+<td>add residential address</td>
+</tr>
+<tr>
+<td><code>urlReference1</code></td>
+<td>string</td>
+<td>First Account Reference</td>
+</tr>
+<tr>
+<td><code>urlReference2</code></td>
+<td>string</td>
+<td>Second Account Reference</td>
+</tr>
+<tr>
+<td><code>urlMandate</code></td>
+<td>string</td>
+<td>A picture containing a signature and image of the customer</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="upload-document-to-camu_1">Upload Document To CAMU</h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/UploadDocumentToCAMUWithResponseCode
+</code></pre></div>
+This method passes the following users documents to T24.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here are the object to pass to T24.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;folio&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dataFields&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;branchCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;disContactPersonAdd&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;disContactPersonMobile&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;disContactPersonName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;dob&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;middleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;mobileNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;residentialAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlMeansOfID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlOther&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlPhotoID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;addState&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlReference1&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlReference2&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;urlMandate&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<h3 id="parameters_8">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>folio</code></td>
+<td>object</td>
+<td>portfolio group where the request belong to on 1Xpress. eg one bank, specta, etc</td>
+</tr>
+<tr>
+<td><code>accountName</code></td>
+<td>string</td>
+<td>Name of users account</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td>Account number</td>
+</tr>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td>Bank Verfication Number</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>string</td>
+<td>source of the request e.g one bank , specta</td>
+</tr>
+<tr>
+<td><code>disContactPersonAdd</code></td>
+<td>string</td>
+<td>Add disContact person</td>
+</tr>
+<tr>
+<td><code>disContactPersonMobile</code></td>
+<td>string</td>
+<td>disContact Person Mobile number</td>
+</tr>
+<tr>
+<td><code>disContactPersonName</code></td>
+<td>string</td>
+<td>DisContact person name</td>
+</tr>
+<tr>
+<td><code>dob</code></td>
+<td>string</td>
+<td>Date Of Birth</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td>Email Address</td>
+</tr>
+<tr>
+<td><code>firstName</code></td>
+<td>string</td>
+<td>Account First Name</td>
+</tr>
+<tr>
+<td><code>lastName</code></td>
+<td>string</td>
+<td>Account Last Name</td>
+</tr>
+<tr>
+<td><code>middleName</code></td>
+<td>string</td>
+<td>Account Middle Name</td>
+</tr>
+<tr>
+<td><code>mobileNumber</code></td>
+<td>string</td>
+<td>Account Mobile number</td>
+</tr>
+<tr>
+<td><code>residentialAddress</code></td>
+<td>string</td>
+<td>Users ressidential address</td>
+</tr>
+<tr>
+<td><code>urlMeansOfID</code></td>
+<td>string</td>
+<td>link to means of Idenfication</td>
+</tr>
+<tr>
+<td><code>urlOther</code></td>
+<td>string</td>
+<td>Other available link</td>
+</tr>
+<tr>
+<td><code>urlPhotoID</code></td>
+<td>string</td>
+<td>Link to Photo identification</td>
+</tr>
+<tr>
+<td><code>addState</code></td>
+<td>string</td>
+<td>add residential address</td>
+</tr>
+<tr>
+<td><code>urlReference1</code></td>
+<td>string</td>
+<td>First Account Reference</td>
+</tr>
+<tr>
+<td><code>urlReference2</code></td>
+<td>string</td>
+<td>Second Account Reference</td>
+</tr>
+<tr>
+<td><code>urlMandate</code></td>
+<td>string</td>
+<td>A picture containing a signature and image of the customer</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses_1">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">result (success)</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;referenceID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>referenceID</code></td>
+<td>string</td>
+<td>The reference Identification Number</td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>The response result Description eg <em>Success</em></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="get-mandate-url">Get Mandate URL</h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/GetMandateUrl
+</code></pre></div>
+This method gets users mandate .</p>
+<div class="admonition example request">
+<p class="admonition-title">Example</p>
+<p><br>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;images&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;string&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;customerId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;folderName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;fileName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</div>
+<h3 id="parameters_9">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>images</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Mandate containing the signature and image of customer</td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Customer Identification number</td>
+</tr>
+<tr>
+<td><code>folderName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Folder repository name</td>
+</tr>
+<tr>
+<td><code>fileName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>file repository name</td>
+</tr>
+</tbody>
+</table>
+<p>### Responses</p>
+<div class="admonition example">
+<p class="admonition-title">result (success)</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;referenceID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>referenceID</code></td>
+<td>string</td>
+<td>The reference Identification Number</td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>The response result Description eg <em>Success</em></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="requests"><strong>Requests</strong></h1>
+<h2 id="cheque-request">Cheque Request</h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/ChequeRequest
+</code></pre></div>
+This is a method for making a Cheque Request when the user requests it.</p>
+<div class="admonition example">
+<p class="admonition-title">Request</p>
+<p><br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;dataFields&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;esource&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;reqBranchCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;accountType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;customerName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;delBranchCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;noOfBooklet&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dataFields</code></td>
+<td>object</td>
+<td><font color="red">*required</font><br>The <code>dataFields</code> contains list of objects to be passed below and their description</td>
+</tr>
+<tr>
+<td><code>esource</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Online Channel Name</td>
+</tr>
+<tr>
+<td><code>reqBranchCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Account Branch Code used in Openining the Account</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Customer Account Number</td>
+</tr>
+<tr>
+<td><code>accountType</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Customer Account Type</td>
+</tr>
+<tr>
+<td><code>customerName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Customer Account Name</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Account currency eg <em>NGN</em></td>
+</tr>
+<tr>
+<td><code>delBranchCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Delivery Branch Code</td>
+</tr>
+<tr>
+<td><code>noOfBooklet</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Number of Cheque booklet the user need</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="card-request"><strong>Card Request</strong></h1>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/ChequeRequest
+</code></pre></div>
+This is a method for making a Card Request when the user requests it.</p>
+<div class="admonition example">
+<p class="admonition-title">Request</p>
+<p><br>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;accountId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isMasterCard&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isVerveCard&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>accountId</code></td>
+<td>object</td>
+<td><font color="red">*required</font><br> The users account ID</td>
+</tr>
+<tr>
+<td><code>isMasterCard</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Indicates if a master card is chosen <em>i.e it shows 1 for selected and 0 when not selected</em></td>
+</tr>
+<tr>
+<td><code>isVerveCard</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Indicates if a verve card is chosen <em>i.e it shows 1 for selected and 0 when not selected</em></td>
+</tr>
+<tr>
+<td><code>sessionkey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users email address</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h1 id="reset-password"><strong>Reset Password</strong></h1>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/ResetPassword
+</code></pre></div>
+Resets the User Password</p>
+<div class="admonition example value">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;oldPassword&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_10">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users email address</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users new password for signing in to Account</td>
+</tr>
+<tr>
+<td><code>oldPassword</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users old password for signing in to Account</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="reset-joint-account-password"><strong>Reset Joint Account Password</strong></h1>
+<div class="highlight"><pre><span></span><code> POST /api/User/ResetJointAccountDefaultPassword
+</code></pre></div>
+<p>This resets the password of users Joint Account.</p>
+<div class="admonition example value">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;oldPassword&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_11">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users email address</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users new password for signing in to Account</td>
+</tr>
+<tr>
+<td><code>oldPassword</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users old password for signing in to Account</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users account number for joint account</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="update-detials"><strong>Update Detials</strong></h1>
+<h2 id="update-contact-details">Update Contact Details</h2>
+<div class="highlight"><pre><span></span><code>POST /api/User/UpdateContactDetails
+</code></pre></div>
+<p>This Method updates the contact details of the user. Once the user has signup successfully, the following data can be updated.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here are the list of objects to update the users contact details.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-11-20T21:21:05.937Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;progressLevel&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;middleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sector&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;industry&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nationality&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employmentStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employerName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employmentAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressTown&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressState&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressLandmark&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;userName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isDefaultPassword&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;residence&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;referralCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;clientID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokPhoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokRelationship&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokFullName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_12">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Bank verification Number Details</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red">*required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users email address</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users password</td>
+</tr>
+<tr>
+<td><code>phoneNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The mobile number of the user which will be linked users Account</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users residential address</td>
+</tr>
+<tr>
+<td><code>country</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> country of residence</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> State of the country updated</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users Account Number</td>
+</tr>
+<tr>
+<td><code>progressLevel</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Progress Level of Registration</td>
+</tr>
+<tr>
+<td><code>sector</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users Occupation</td>
+</tr>
+<tr>
+<td><code>industry</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The company or industry where the user works</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Nationality of the User</td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users gender  <em>eg male or female</em></td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Your name Title eg <em>Mr,Mrs,Miss</em></td>
+</tr>
+<tr>
+<td><code>sessionkey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key</td>
+</tr>
+<tr>
+<td><code>employmentStatus</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Employment status of the user e.g <em>self employed,retired,student..</em></td>
+</tr>
+<tr>
+<td><code>employerName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The name of the employer/company e.g <em>sterling,shell,KFC...</em></td>
+</tr>
+<tr>
+<td><code>employmentAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Address location of users current employment</td>
+</tr>
+<tr>
+<td><code>addressTown</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Town where current employment is located</td>
+</tr>
+<tr>
+<td><code>addressState</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The State where current employment is located e.g <em>Lagos,Ogun, Benin</em></td>
+</tr>
+<tr>
+<td><code>addressLandmark</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Landmark where current employment is located e.g <em>finecoat,Total gas station</em></td>
+</tr>
+<tr>
+<td><code>userName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Username for Joint Account</td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> First name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Last name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>isDefaultPassword</code></td>
+<td>boolean</td>
+<td><font color="red">*required</font><br> defualt password generated for joint account</td>
+</tr>
+<tr>
+<td><code>residence</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>residencial address</td>
+</tr>
+<tr>
+<td><code>referralCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Referral code</td>
+</tr>
+<tr>
+<td><code>clientID</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client identification number</td>
+</tr>
+<tr>
+<td><code>nokAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Next OF Kin residential address</td>
+</tr>
+<tr>
+<td><code>nokPhoneNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Mobile number of next of Kin</td>
+</tr>
+<tr>
+<td><code>nokRelationship</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users realetionship with Next of Kin e.g Mother,Father Sister etc</td>
+</tr>
+<tr>
+<td><code>nokFullName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Full name of Next of kin</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="update-users-with-no-bvn"><strong>Update Users With No BVN</strong></h1>
+<div class="highlight"><pre><span></span><code>POST /api/User/UpdateUserWithNoBVN
+</code></pre></div>
+<p>This Method updates the contact details of users with no BVN.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here are the list of objects to update the users contact details.
+<br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-02-19T13:08:43.368Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;initialAccountSelected&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;progressLevel&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;middleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;preferredName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sector&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;industry&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nationality&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employmentStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employerName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employmentAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressTown&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressState&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressLandmark&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;userName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isDefaultPassword&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;residence&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_13">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red"></font><br> Bank verification Number Details</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red">*required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users email address</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users password</td>
+</tr>
+<tr>
+<td><code>phoneNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The mobile number of the user which will be linked users Account</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users residential address</td>
+</tr>
+<tr>
+<td><code>country</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> country of residence</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> State of the country updated</td>
+</tr>
+<tr>
+<td><code>initialAccountSelected</code></td>
+<td>string</td>
+<td>The initial account selected by the user</td>
+</tr>
+<tr>
+<td><code>progressLevel</code></td>
+<td>string</td>
+<td>Porgress level status</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red"></font><br> Users Account Number</td>
+</tr>
+<tr>
+<td><code>firstName</code></td>
+<td>string</td>
+<td>User first name</td>
+</tr>
+<tr>
+<td><code>middleName</code></td>
+<td>string</td>
+<td>User middle name</td>
+</tr>
+<tr>
+<td><code>lastName</code></td>
+<td>string</td>
+<td>User last name</td>
+</tr>
+<tr>
+<td><code>preferredName</code></td>
+<td>string</td>
+<td>User preferred name</td>
+</tr>
+<tr>
+<td><code>sector</code></td>
+<td>string</td>
+<td><font color="red"></font><br> Users Occupation</td>
+</tr>
+<tr>
+<td><code>industry</code></td>
+<td>string</td>
+<td><font color="red"></font><br> The company or industry where the user works</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Nationality of the User</td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users gender  <em>eg male or female</em></td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Your name Title eg <em>Mr,Mrs,Miss</em></td>
+</tr>
+<tr>
+<td><code>sessionkey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key</td>
+</tr>
+<tr>
+<td><code>employmentStatus</code></td>
+<td>string</td>
+<td><font color="red"></font><br> Employment status of the user e.g <em>self employed,retired,student..</em></td>
+</tr>
+<tr>
+<td><code>employerName</code></td>
+<td>string</td>
+<td><font color="red"></font><br> The name of the employer/company e.g <em>sterling,shell,KFC...</em></td>
+</tr>
+<tr>
+<td><code>employmentAddress</code></td>
+<td>string</td>
+<td><font color="red"></font><br> Address location of users current employment</td>
+</tr>
+<tr>
+<td><code>addressTown</code></td>
+<td>string</td>
+<td><font color="red"></font><br> Town where current employment is located</td>
+</tr>
+<tr>
+<td><code>addressState</code></td>
+<td>string</td>
+<td><font color="red"></font><br> The State where current employment is located e.g <em>Lagos,Ogun, Benin</em></td>
+</tr>
+<tr>
+<td><code>addressLandmark</code></td>
+<td>string</td>
+<td><font color="red"></font><br> The Landmark where current employment is located e.g <em>finecoat,Total gas station</em></td>
+</tr>
+<tr>
+<td><code>userName</code></td>
+<td>string</td>
+<td><font color="red"></font><br> Username for Joint Account</td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td><font color="red"></font><br> First name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td><font color="red"></font><br> Last name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>isDefaultPassword</code></td>
+<td>boolean</td>
+<td><font color="red">*required</font><br> defualt password generated for joint account</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="update-users-next-of-kin"><strong>Update Users Next Of Kin</strong></h1>
+<div class="highlight"><pre><span></span><code>  POST /api/User/UpdateUserNOK
+</code></pre></div>
+<p>&amp; Mobie Version</p>
+<div class="highlight"><pre><span></span><code>POST /api/User/UpdateUserNOKMobile
+</code></pre></div>
+<p>Updates the users Next Of Kin to the users Account</p>
+<p>&nbsp;</p>
+
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;userEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokPhoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokRelationship&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokFullName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameter_1">Parameter</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>userEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Email address of the user</td>
+</tr>
+<tr>
+<td><code>nokAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Address of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokPhoneNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Mobile Number of Next of Kin</td>
+</tr>
+<tr>
+<td><code>nokRelationship</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The relationship between the user and the Next of Kin</td>
+</tr>
+<tr>
+<td><code>nokFullName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Full name of Next OF Kin</td>
+</tr>
+<tr>
+<td><code>sessionKey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="account-activation"><strong>Account Activation</strong></h1>
+<h2 id="activate-account">Activate Account</h2>
+<div class="highlight"><pre><span></span><code>POST /api/User/ActivateAccount
+</code></pre></div>
+<p>This method is for the user to get a verification link, which shows the <code>bvn</code> being confirmed valid, allowing the user to proceed with the registration.</p>
+<div class="admonition example">
+<p class="admonition-title">Example Value</p>
+<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
+        <span class="nt">&quot;activationRef&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="parameters_14">Parameters</h3>
+<p>Only one parameter is reqiured for this.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>activationRef</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Sends a mail activation/verification link to the user</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="activate-beneficiary-joint-account">Activate Beneficiary Joint Account</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/ActivateBeneficiaryJointAccount
+</code></pre></div>
+<p>This method is for users who opt in for a joint account, they get a verification link, which shows the <code>bvn</code> being confirmed valid, allowing the user to proceed with the registration.</p>
+<div class="admonition example">
+<p class="admonition-title">Example Value</p>
+<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
+        <span class="nt">&quot;activationRef&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="parameters_15">Parameters</h3>
+<p>Only one parameter is reqiured for this.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>activationRef</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Sends a mail activation/verification link to the user</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="account-opening"><strong>Account Opening</strong></h1>
+<h2 id="open-individual-savings-account">Open Individual Savings Account</h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/OpenIndividualSavingsAccount
+</code></pre></div>
+Opening an Individual saving account</p>
+<div class="admonition example">
+<p class="admonition-title">Example Value</p>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;productCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;branch&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;clientID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_16">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users email address</td>
+</tr>
+<tr>
+<td><code>sessionkey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key</td>
+</tr>
+<tr>
+<td><code>productCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>product code of account type</td>
+</tr>
+<tr>
+<td><code>branch</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Account Branch used in Openining the Account</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Currency of the user <em>Naira,Dollar etc</em></td>
+</tr>
+<tr>
+<td><code>clientID</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client Identification Number</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses_2">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">Result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;nuban&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;customerId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseText&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nuban</code></td>
+<td>string</td>
+<td>new account number <code>10digits</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td>The ID of the User</td>
+<td></td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseText</code></td>
+<td>string</td>
+<td>The response result message</td>
+<td></td>
+</tr>
+<tr>
+<td><code>accountType</code></td>
+<td>string</td>
+<td>Account type e.g_Saving, Current_</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2 id="open-online-account">Open Online Account</h2>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/OpenOnlineAccount
+</code></pre></div>
+Opening an Online account</p>
+<p>!!!! Example "Example Value"
+    <div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;productCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;branch&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;clientID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+<p>&nbsp;</p>
+
+<h3 id="parameters_17">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users email address</td>
+</tr>
+<tr>
+<td><code>sessionkey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key</td>
+</tr>
+<tr>
+<td><code>productCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>product code of account type</td>
+</tr>
+<tr>
+<td><code>branch</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Account Branch used in Openining the Account</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Currency of the user <em>Naira,Dollar etc</em></td>
+</tr>
+<tr>
+<td><code>clientID</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client Identification Number</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses_3">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">Result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;nuban&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;customerId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseText&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nuban</code></td>
+<td>string</td>
+<td>new account number <code>10digits</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td>The ID of the User</td>
+<td></td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseText</code></td>
+<td>string</td>
+<td>The response result message</td>
+<td></td>
+</tr>
+<tr>
+<td><code>accountType</code></td>
+<td>string</td>
+<td>Account type e.g_Saving, Current_</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="open-a-joint-virtual-account-with-beneficiaries">Open a Joint Virtual Account With Beneficiaries</h2>
+<p><div class="highlight"><pre><span></span><code>  POST /api/User/OpenJointVirtualAccountWithBeneficiaries
+</code></pre></div>
+This Method lets users open virtual account with thier beneficiaries</p>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;productCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;branch&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountBeneficiaries&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="nt">&quot;passportPhoto&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;validIdType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;validIdNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;validId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-02-20T11:22:42.406Z&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;initiatorEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_18">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users email address</td>
+</tr>
+<tr>
+<td><code>sessionkey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td><font color="red">*required</font><br> Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>productCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>product code of account type</td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users passport image</td>
+</tr>
+<tr>
+<td><code>branch</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Account Branch used in Openining the Account</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+</tr>
+<tr>
+<td><code>accountBeneficiaries</code></td>
+<td>object</td>
+<td><font color="red">*required</font><br> number of beneficiaries</td>
+</tr>
+</tbody>
+</table>
+<p>Below are the details needed for Account Beneficiaries.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Bank verification Number Details of Beneficiary</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Email address of Beneficiary</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiaries password</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td><font color="red">*required</font><br> Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> passport photograph of beneficiary</td>
+</tr>
+<tr>
+<td><code>validIdType</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Type of Identification <em>eg: Drivers license</em></td>
+</tr>
+<tr>
+<td><code>validIdNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Valid Identification Number based on the ID Type given</td>
+</tr>
+<tr>
+<td><code>signature</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiary signature</td>
+</tr>
+<tr>
+<td><code>validId</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Valid Identification</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> the reference form file</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> email address of Beneficiary</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red"> *required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>initiatorEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> email of the users adding a Beneficiary</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiary account number</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;mainVirtualAccount&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;nuban&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;customerId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseText&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;beneficiaryResponseListDto&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;isSuccessful&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nuban</code></td>
+<td>string</td>
+<td>new account number <code>10digits</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td>The ID of the User</td>
+<td></td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseText</code></td>
+<td>string</td>
+<td>The response result message</td>
+<td></td>
+</tr>
+<tr>
+<td><code>accountType</code></td>
+<td>string</td>
+<td>Account type e.g <em>Saving, Current</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>beneficiaryResponseListDto</code></td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Beneficiary Response List Object
+|<code>200</code> Schema|Type| Description||
+|---|------|-----------|--|
+|<code>isSuccessful</code>|boolean| shows true if is successfull||
+|<code>bvN_Firstname</code>|string|First name of Bank Verification Number||
+|<code>bvN_Lastname</code>|string|Last name of Bank Verification Number||
+|<code>email</code>|string|email address||
+|<code>responseDescription</code>|string|shows a response message ||</p>
+<p>&nbsp;</p>
+
+<h2 id="open-onebank-joint-virtual-account-with-beneficiaries">Open OneBank Joint Virtual Account With Beneficiaries</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/OpenOneBankJointVirtualAccountWithBeneficiaries
+</code></pre></div>
+<p>This Method lets users open a oneBank Joint virtual account with thier beneficiaries.</p>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountFirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountLastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountMiddleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;dob&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;productCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountBeneficiaries&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-02-20T11:29:01.538Z&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;initiatorEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_19">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users email address</td>
+</tr>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Bank verification Number Details</td>
+</tr>
+<tr>
+<td><code>accountFirstName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>First name of users Account</td>
+</tr>
+<tr>
+<td><code>accountLastName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Last name of users Account</td>
+</tr>
+<tr>
+<td><code>dob</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Date of Birth</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td><font color="red">*required</font><br> Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>productCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>product code of account type</td>
+</tr>
+<tr>
+<td><code>accountBeneficiaries</code></td>
+<td>object</td>
+<td><font color="red">*required</font><br> number of beneficiaries</td>
+</tr>
+</tbody>
+</table>
+<p>Below are the details needed for Account Beneficiaries.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Bank verification Number Details of Beneficiary</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Email address of Beneficiary</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td><font color="red">*required</font><br> Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red"> *required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>initiatorEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> email of the users adding a Beneficiary</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiary account number</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;mainVirtualAccount&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;nuban&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;customerId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseText&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;beneficiaryResponseListDto&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;isSuccessful&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nuban</code></td>
+<td>string</td>
+<td>new account number <code>10digits</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td>The ID of the User</td>
+<td></td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseText</code></td>
+<td>string</td>
+<td>The response result message</td>
+<td></td>
+</tr>
+<tr>
+<td><code>accountType</code></td>
+<td>string</td>
+<td>Account type e.g <em>Saving, Current</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>beneficiaryResponseListDto</code></td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Beneficiary Response List Object</p>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>isSuccessful</code></td>
+<td>boolean</td>
+<td>shows true if is successfull</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>email address</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>shows a response message</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="open-corporate-account">Open Corporate Account</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/OpenCorporateAccount
+</code></pre></div>
+<p>This Method lets users open a corporate account.</p>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;rcNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;incorpDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-02-20T12:16:47.250Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;tin&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;businessName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;branch&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;productCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;clientID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_20">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rcNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Regustered company number</td>
+</tr>
+<tr>
+<td><code>tin</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Tax Identification Number</td>
+</tr>
+<tr>
+<td><code>businessName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Name of the Bussiness</td>
+</tr>
+<tr>
+<td><code>branch</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Account Branch used in Openining the Account</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users email address</td>
+</tr>
+<tr>
+<td><code>sessionkey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key</td>
+</tr>
+<tr>
+<td><code>productCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>product code of account type</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+</tr>
+<tr>
+<td><code>clientID</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client Identification Number</td>
+</tr>
+</tbody>
+</table>
+<!-- 
+
+???
+
+rcNumber
+ -->
+
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;nuban&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;customerId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseText&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nuban</code></td>
+<td>string</td>
+<td>new account number <code>10digits</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td>The ID of the User</td>
+<td></td>
+</tr>
+<tr>
+<td><code>accountName</code></td>
+<td>string</td>
+<td>Name of Account</td>
+<td></td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseText</code></td>
+<td>string</td>
+<td>The response result message</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="open-can-save-online-account">Open Can save online account</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/OpenCanSaveOnlineAccount
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;childFirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;childMiddleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;childLastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;productCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;branch&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;clientID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_21">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> User Email address</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Date of Birth</td>
+</tr>
+<tr>
+<td><code>childFirstName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Child's first name</td>
+</tr>
+<tr>
+<td><code>childMiddleName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Child's Middle name</td>
+</tr>
+<tr>
+<td><code>childLastName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Child's Last name</td>
+</tr>
+<tr>
+<td><code>sessionkey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Session key</td>
+</tr>
+<tr>
+<td><code>productCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>product code of account type</td>
+</tr>
+<tr>
+<td><code>branch</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Bank Branch</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Gender e.g <em>Male,Female</em></td>
+</tr>
+<tr>
+<td><code>clientID</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client Identification Number</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;nuban&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;customerId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;responseText&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nuban</code></td>
+<td>string</td>
+<td>new account number <code>10digits</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td>The ID of the User</td>
+<td></td>
+</tr>
+<tr>
+<td><code>accountName</code></td>
+<td>string</td>
+<td>Name of Account</td>
+<td></td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseText</code></td>
+<td>string</td>
+<td>The response result message</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="open-account-single-call">Open Account Single Call</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/OpenOnlineAccountSingleCall
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-05T10:21:17.414Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;preferredName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;productCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;branch&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sector&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;industry&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nationality&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;initialAccountSelected&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;clientID&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;childFirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;childMiddleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;childLastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;childDateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;childGender&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_22">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Bank verification Number Details</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red">*required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Email address</td>
+</tr>
+<tr>
+<td><code>preferredName</code></td>
+<td>string</td>
+<td>User preferred name</td>
+</tr>
+<tr>
+<td><code>phoneNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The mobile number of the user which will be linked users Account</td>
+</tr>
+<tr>
+<td><code>firstName</code></td>
+<td>string</td>
+<td>User first name</td>
+</tr>
+<tr>
+<td><code>lastName</code></td>
+<td>string</td>
+<td>User last name</td>
+</tr>
+<tr>
+<td><code>productCode</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> User product code</td>
+</tr>
+<tr>
+<td><code>branch</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Account Branch used in Openining the Account</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>The Currency of the user <em>Naira,Dollar etc</em></td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> users residential address</td>
+</tr>
+<tr>
+<td><code>sector</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users Occupation</td>
+</tr>
+<tr>
+<td><code>industry</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The company or industry where the user works</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> The Nationality of the User</td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users gender  <em>eg male or female</em></td>
+</tr>
+<tr>
+<td><code>initialAccountSelected</code></td>
+<td>string</td>
+<td>The initial account selected by the user</td>
+</tr>
+<tr>
+<td><code>clientID</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Client Identification number</td>
+</tr>
+<tr>
+<td><code>childFirstName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Child's first name</td>
+</tr>
+<tr>
+<td><code>childMiddleName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Child's Middle name</td>
+</tr>
+<tr>
+<td><code>childLastName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Child's Last name</td>
+</tr>
+<tr>
+<td><code>childDateOfBirth</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Child's date of birth</td>
+</tr>
+<tr>
+<td><code>childGender</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Childs Gender e,g Male, female</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="add-account"><strong>Add Account</strong></h1>
+<h2 id="add-joint-account-beneficiary-details">Add Joint Account Beneficiary Details</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/AddJointAccountBeneficiaryDetails
+</code></pre></div>
+<p>The method lets users add a joint account for beneficiary</p>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;passportPhoto&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validIdType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validIdNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-10T11:33:19.041Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;initiatorEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_23">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Bank verification Number Details of Beneficiary</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Email address of Beneficiary</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiaries password</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td><font color="red">*required</font><br> Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> passport photograph of beneficiary</td>
+</tr>
+<tr>
+<td><code>validIdType</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Type of Identification <em>eg: Drivers license</em></td>
+</tr>
+<tr>
+<td><code>validIdNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Valid Identification Number based on the ID Type given</td>
+</tr>
+<tr>
+<td><code>signature</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiary signature</td>
+</tr>
+<tr>
+<td><code>validId</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Valid Identification</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> the reference form file</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Beneficiary Email address</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red"> *required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>initiatorEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  Email of the users adding a Beneficiary</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiary account number</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses_4">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">Result</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;isSuccessful&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>isSuccessful</code></td>
+<td>boolean</td>
+<td>shows true if is successfull</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>email address</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>shows a response message</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="add-onebank-joint-account-beneficiary-details">Add OneBank Joint Account Beneficiary Details</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/AddOneBankJointAccountBeneficiaryDetails
+</code></pre></div>
+<p>The method lets users add OneBank joint account for beneficiaries.</p>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-02-20T12:37:27.465Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;initiatorEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_24">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Bank verification Number Details of Beneficiary</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Email address of Beneficiary</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td><font color="red">*required</font><br> Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red"> *required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>initiatorEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  Email of the users adding a Beneficiary</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiary account number</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses_5">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">Result</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;isSuccessful&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>isSuccessful</code></td>
+<td>boolean</td>
+<td>shows true if is successfull</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>email address</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>shows a response message</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="send-mail"><strong>Send Mail</strong></h1>
+<h2 id="send-continue-mail">Send Continue Mail</h2>
+<div class="highlight"><pre><span></span><code>POST /api/User/SendContinueMail
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Only the Email will be passed to send a verification mail to continue sign up process
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</div>
+<h3 id="parameters_25">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Sends mail for the user to continue with the sign up process</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="send-mail-attachment">Send Mail Attachment</h2>
+<div class="highlight"><pre><span></span><code>POST /api/User/SendMailAttachment
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;subj&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;destinationEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;recieverFirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;base64Attachment&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;fileName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;addressesToCopy&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;customerName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;fromEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="parameters_26">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>subj</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Subject of email</td>
+</tr>
+<tr>
+<td><code>destinationEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>The designated email address</td>
+</tr>
+<tr>
+<td><code>recieverFirstName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Recievers first name</td>
+</tr>
+<tr>
+<td><code>base64Attachment</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  Email Attachments (base64 Encryption)</td>
+</tr>
+<tr>
+<td><code>fileName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  Name of the file attached</td>
+</tr>
+<tr>
+<td><code>addressesToCopy</code></td>
+<td>string</td>
+<td>Email address to copy</td>
+</tr>
+<tr>
+<td><code>customerName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  provide customers name</td>
+</tr>
+<tr>
+<td><code>fromEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Senders email address</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="generate-otp"><strong>Generate OTP</strong></h1>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/GenerateOTP
+</code></pre></div>
+This generate a new OTP, sending it to email and mobile number.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;mobile&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_27">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mobile</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Mobile number to send OTP</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Eamil address to send the OTP</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses_6">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="validate-otp"><strong>Validate OTP</strong></h1>
+<p><div class="highlight"><pre><span></span><code>POST /api/User/ValidateOTP
+</code></pre></div>
+This Validate OTP, sent it to email and mobile number.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;mobile&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;otp&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_28">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mobile</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> validate the Mobile number</td>
+</tr>
+<tr>
+<td><code>otp</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> validate otp</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses_7">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="verification"><strong>Verification</strong></h1>
+<h2 id="verify-bvn">Verify BVN</h2>
+<div class="highlight"><pre><span></span><code>POST /api/User/VerifyBVN
+</code></pre></div>
+<h2 id="user-signin_1">User SignIn</h2>
+<div class="admonition example equest">
+<p class="admonition-title">Example</p>
+<p><br>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<h3 id="parameters_29">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Bank verification Number</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="products"><strong>Products</strong></h1>
+<h2 id="get-active-products">Get Active Products</h2>
+<p><div class="highlight"><pre><span></span><code>GET /api/User/GetActiveProducts
+</code></pre></div>
+The API method get the active product of account e.g IMAL, KIA KIA, I CAN SAVE,  Classic Savings etc.</p>
+<p>&nbsp;</p>
+
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;productName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;productCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isActive&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;categoryID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>productName</code></td>
+<td>string</td>
+<td>Name of Product</td>
+</tr>
+<tr>
+<td><code>productCode</code></td>
+<td>string</td>
+<td>Product code</td>
+</tr>
+<tr>
+<td><code>isActive</code></td>
+<td>boolean</td>
+<td>shows true if product is active and false if it's not</td>
+</tr>
+<tr>
+<td><code>categoryID</code></td>
+<td>string</td>
+<td>Product category Identification Number</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>Currency e.g NGN, USD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="get-product-category">Get Product Category</h2>
+<p><div class="highlight"><pre><span></span><code>GET /api/User/GetProductCategory
+</code></pre></div>
+The API method get the product category e.g Savings, Current.</p>
+<p>&nbsp;</p>
+
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;productName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;productCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isActive&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;categoryID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>productName</code></td>
+<td>string</td>
+<td>Name of Product</td>
+</tr>
+<tr>
+<td><code>productCode</code></td>
+<td>string</td>
+<td>Product code</td>
+</tr>
+<tr>
+<td><code>isActive</code></td>
+<td>boolean</td>
+<td>shows true if product is active and false if it's not</td>
+</tr>
+<tr>
+<td><code>categoryID</code></td>
+<td>string</td>
+<td>Product category Identification Number</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>Currency e.g NGN, USD</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h1 id="user"><strong>User</strong></h1>
+<h2 id="get-user-by-email-address">Get User by Email address</h2>
+<div class="highlight"><pre><span></span><code>GET /api/User/GetUserByEmail
+</code></pre></div>
+<h2 id="delete-user">Delete User</h2>
+<div class="highlight"><pre><span></span><code>GET /api/User/deleteUser
+</code></pre></div>
+<p>This method fectch deletes a user</p>
+<div class="admonition example">
+<p class="admonition-title">Example Value</p>
+<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
+      <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="parameters_30">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Users email address</td>
+</tr>
+<tr>
+<td><code>sessionKey</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  The Session key of every transaction which</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

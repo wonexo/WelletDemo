@@ -9,12 +9,12 @@
       
       
       
-      <link rel="shortcut icon" href="../images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
-        <title>Overview - Sterling OneWallet</title>
+        <title>OVERVIEW - Online Account Opening API</title>
       
     
     
@@ -22,6 +22,10 @@
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#546d78">
         
       
     
@@ -36,10 +40,6 @@
     
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../stylesheets/dgs_theme.css?v=3.0.13">
-    
     
       
     
@@ -52,9 +52,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="">
-      
-        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue-grey" data-md-color-accent="red">
       
   
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#brief-summary" class="md-skip">
+        <a href="#online-account-opening-api-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -73,146 +71,49 @@
       
     </div>
     
-      <!--
-  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
-
-
-
-<div class="sash" data-no-interact></div>
-
-<!-- Application header -->
-<header class="md-header dgs-header" data-md-component="header">
-
-  <!-- Top-level navigation -->
-  <nav class="md-header-nav md-grid dgs-header-nav" aria-label="Header">
-
-    <!-- Link to home -->
-    <a
-      href=".."
-      title="Sterling OneWallet"
-      class="md-header-nav__button dgs-header-nav__button md-logo dgs-logo"
-      aria-label="Sterling OneWallet"
-    >
       
-  <img src="../images/logo--blue.svg" alt="logo">
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Online Account Opening API" class="md-header-nav__button md-logo" aria-label="Online Account Opening API">
+      
+  <img src="../img/logo.svg" alt="logo">
 
     </a>
-
-    <!-- Header title -->
-    <div class="md-header-nav__title dgs-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis sr-only">
-          <span class="md-header-nav__topic md-ellipsis">
-            Sterling OneWallet
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Online Account Opening API
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             
-              Overview
+              OVERVIEW
             
           </span>
         </div>
-      
+      </div>
     </div>
-
-    <!-- <div class="dgs-header-nav__start">
-      <a class="md-header-nav__button dgs-header-nav__button dgs-getting-started" href="/dgs/getting-started/">
-        <span class="dgs-header-nav__text--upper">Guides & Docs</span>
-        <span class="dgs-header-nav__text--lower">
-          <time>Updated 2021-02-11</time>
-        </span>
-      </a>
-    </div> -->
-
-    <!-- Repository containing source -->
     
-
-    <!-- Button to open drawer -->
-    <label class="md-header-nav__button md-icon dgs-header-nav__button" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
-    </label>
-
-    <!-- Button to open search dialogue -->
-    
-      <label class="md-header-nav__button md-icon dgs-header-nav__button" for="__search">
+      <label class="md-header-nav__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-
-      <!-- Search interface -->
-      <!--
-  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-
-
-<!-- Search interface -->
+      
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input
-        type="text"
-        class="md-search__input"
-        name="query"
-        aria-label="Search"
-        placeholder="Search"
-        autocapitalize="off"
-        autocorrect="off"
-        autocomplete="off"
-        spellcheck="false"
-        data-md-component="search-query"
-        data-md-state="active"
-        required
-      />
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button
-        type="reset"
-        class="md-search__icon md-icon"
-        aria-label="Clear"
-        data-md-component="search-reset"
-        tabindex="-1"
-      >
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
@@ -227,12 +128,9 @@
       </div>
     </div>
   </div>
-
-  <div class="post-search-decoration" data-no-interact></div>
 </div>
     
-
-
+    
   </nav>
 </header>
     
@@ -249,63 +147,21 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <!--
-  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
-
-
-
-<!-- Determine class according to configuration -->
+                    
 
 
 
 
-<!-- Main navigation -->
-<nav
-  class="md-nav md-nav--primary"
-  aria-label="Navigation"
-  data-md-level="0"
->
-
-  <!-- Site title -->
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a
-      href=".."
-      title="Sterling OneWallet"
-      class="md-nav__button md-logo"
-      aria-label="Sterling OneWallet"
-    >
+    <a href=".." title="Online Account Opening API" class="md-nav__button md-logo" aria-label="Online Account Opening API">
       
-  <img src="../images/logo--blue.svg" alt="logo">
+  <img src="../img/logo.svg" alt="logo">
 
     </a>
-    <span class="sr-only">Sterling OneWallet</span>
+    Online Account Opening API
   </label>
-
-  <!-- Repository information -->
   
-
-  <!-- Render item list -->
   <ul class="md-nav__list" data-md-scrollfix>
     
       
@@ -317,7 +173,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Home
+        INTRODUCTION
       </a>
     </li>
   
@@ -336,19 +192,23 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Overview
+          OVERVIEW
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Overview
+        OVERVIEW
       </a>
       
         
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -358,23 +218,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#brief-summary" class="md-nav__link">
-    Brief Summary
+  <a href="#using-the-api" class="md-nav__link">
+    Using the API
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request" class="md-nav__link">
+    Request
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#responses" class="md-nav__link">
-    Responses
+        
+          <li class="md-nav__item">
+  <a href="#responses-200" class="md-nav__link">
+    Responses 200
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#response-status-codes" class="md-nav__link">
-    Response Status Codes
+        
+          <li class="md-nav__item">
+  <a href="#parameter" class="md-nav__link">
+    Parameter
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -393,33 +266,25 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../create-wallet/" class="md-nav__link">
-        Create Wallet
-      </a>
-    </li>
-  
-
     
+    <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
       
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../get-wallet-details/" class="md-nav__link">
-        Get Full Wallet Details
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
+      <label class="md-nav__link" for="nav-3">
+        GET STARTED
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="GET STARTED" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          GET STARTED
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
   
   
   
@@ -427,16 +292,16 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" >
       
-      <label class="md-nav__link" for="nav-5">
-        Wallet Transfers
+      <label class="md-nav__link" for="nav-3-1">
+        USER
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Wallet Transfers" data-md-level="1">
-        <label class="md-nav__title" for="nav-5">
+      <nav class="md-nav" aria-label="USER" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-1">
           <span class="md-nav__icon md-icon"></span>
-          Wallet Transfers
+          USER
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -446,8 +311,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../wallet-to-wallet/" class="md-nav__link">
-        Wallet To Wallet
+      <a href="../signup/" class="md-nav__link">
+        SIGN UP
       </a>
     </li>
   
@@ -458,8 +323,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../sterling-to-wallet/" class="md-nav__link">
-        Sterling To Wallet
+      <a href="../signin/" class="md-nav__link">
+        SIGN IN
       </a>
     </li>
   
@@ -470,118 +335,9 @@
     </li>
   
 
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
-      
-      <label class="md-nav__link" for="nav-6">
-        Get Transactions
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Get Transactions" data-md-level="1">
-        <label class="md-nav__title" for="nav-6">
-          <span class="md-nav__icon md-icon"></span>
-          Get Transactions
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../get-transaction/" class="md-nav__link">
-        Get User Transaction
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../get-transactions/" class="md-nav__link">
-        Get User Transactions
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../clear-wallet/" class="md-nav__link">
-        Clear Wallet
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lock-funds/" class="md-nav__link">
-        Lock Funds
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../unlock-funds/" class="md-nav__link">
-        Unlock Funds
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../wallet/" class="md-nav__link">
-        Wallet History
-      </a>
     </li>
   
 
@@ -601,6 +357,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -609,23 +367,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#brief-summary" class="md-nav__link">
-    Brief Summary
+  <a href="#using-the-api" class="md-nav__link">
+    Using the API
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request" class="md-nav__link">
+    Request
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#responses" class="md-nav__link">
-    Responses
+        
+          <li class="md-nav__item">
+  <a href="#responses-200" class="md-nav__link">
+    Responses 200
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#response-status-codes" class="md-nav__link">
-    Response Status Codes
+        
+          <li class="md-nav__item">
+  <a href="#parameter" class="md-nav__link">
+    Parameter
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -642,19 +413,20 @@
               
                 
                 
-                  <h1>Overview</h1>
-                
-                <h2 id="brief-summary">Brief Summary</h2>
-<p>The Sterling wallet is essentially a light core banking application, that allows wallet transactions from account creation, to funds transfer and statement generation. The wallet system is purely driven by SQL Stored Procedures that facilitates the funds-transfers, account creation and statement generation. APIs that expose these functionalities are currently available. The APIs allow different platforms to plug into the wallet ecosystem, meaning that different apps can integrate, create accounts and carry out transactions on the created accounts.
-The wallet also supports foreign currencies (Dollar, Pound and Euro).</p>
-<p>Base URL : <code>https://pass.sterling.ng/OneWallet/swagger/docs/v1</code></p>
-<p>Content Type : <code>application/json</code></p>
-<p>This API is based on REST Principle. By default, all request to the HOST receives the v1 version of the REST API, Accessed through a standard HTTPS request in The following are the Methods available for this API: </p>
+                <h1 id="online-account-opening-api-documentation">Online Account Opening API Documentation</h1>
+<h2 id="using-the-api">Using the API</h2>
+<p>This API is based on REST Principle which lets you create a new account with Sterling Bank. By default, all request to <code>XXXXXXXX xxxx XXXXX</code> receives the <strong>v1</strong> version of the REST API.</p>
+<p>&nbsp;</p>
+
+<p><img alt="" src="../img/overview.PNG" /></p>
+<p>The API access is over <code>HTTPS</code> and it is accessed from <code>XXXXX xxxx XXXXXX</code>. All data is sent and received as JSON. The endpoints return a JSON Metadata which gives you the details of a user, provided by BVN. The API provides a set of endpoints, each with its path for creating an account.</p>
+<h3 id="request">Request</h3>
+<p>The Online Account Opening APIs are accessed through a standard HTTPS request in UTF-8. The following methods are available for this API.</p>
 <table>
 <thead>
 <tr>
-<th><strong>METHOD</strong></th>
-<th><strong>ACTION</strong></th>
+<th>METHOD</th>
+<th>ACTION</th>
 </tr>
 </thead>
 <tbody>
@@ -662,72 +434,463 @@ The wallet also supports foreign currencies (Dollar, Pound and Euro).</p>
 <td><font color="green"> <strong>POST</strong> </font></td>
 <td>CREATE RESOURCES</td>
 </tr>
-<tr>
-<td><font color="blue"> <strong>GET</strong> </font></td>
-<td>FETCHES RESOURCES</td>
-</tr>
 </tbody>
 </table>
-<h2 id="responses">Responses</h2>
-<p>Tokenized Shares API returns all response data as a JSON object. View the Swagger API Model for a description of all the retrievable objects.</p>
-<h2 id="response-status-codes">Response Status Codes</h2>
-<p>The following table shows the possible response status codes when making request, as defined in the RFC 2616 and RFC 6585:</p>
-<table>
-<thead>
-<tr>
-<th><strong>STATUS CODE</strong></th>
-<th><strong>DESCRIPTION</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>(OK) Successful-  This means that the request is successful. The result of the request can be read in the body and the headers of the response.</td>
-</tr>
-<tr>
-<td>400</td>
-<td>Bad Request- This means that the request could not be understood by the server,  which can probably be caused by malformed syntax. The message body will contain more information.</td>
-</tr>
-<tr>
-<td>500</td>
-<td>(Server Error) Server Failure - You should rarely or never see this error, unless the server is down, but you can send a ping request to confirm : "GET api/ping"</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The error (Status code - <code>400</code> &amp; <code>500</code>) responses looks like the following 
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>    <span class="p">{</span>
-<span class="linenos" data-linenos="2 "></span>        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-<span class="linenos" data-linenos="3 "></span>        <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-<span class="linenos" data-linenos="4 "></span>        <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
-<span class="linenos" data-linenos="5 "></span>    <span class="p">}</span>
-</code></pre></div></p>
+<p>&nbsp;</p>
+
+<p>The methods have the following general response scheme, methods with a different response scheme is shown below there Example requests.</p>
+<h3 id="responses-200">Responses <code>200</code></h3>
+<div class="admonition example">
+<p class="admonition-title">result</p>
+<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;progressLevel&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isActive&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;middleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sector&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;industry&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nationality&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;interestedInLoanProducts&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;maritalStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;numberOfChildren&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;occupation&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;hobby&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokFirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokMiddleName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokFullName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokLastName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokPhoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nokRelationship&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employmentStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employerName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;employmentAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressTown&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressState&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;addressLandmark&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountDetails&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+        <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;accountType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;customerId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;accountName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;addedDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;modifiedDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;passportPhoto&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;validIdType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;validIdNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;validId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;sqNo&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;accountLinkCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;accountCategory&quot;</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;addedDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;modifiedDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-11T14:51:47.739Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sessionKey&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;passportPhoto&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validIdType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validIdNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isDefaultPassword&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;responseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+    <span class="p">}</span>
+</code></pre></div>
 </div>
-<p>Schema - Error <code>400</code> |  <code>500</code></p>
+<h3 id="parameter">Parameter</h3>
 <table>
 <thead>
 <tr>
-<th><strong>Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>status</td>
-<td>boolean</td>
-<td>Shows the status of the response e.g true or false.</td>
+<td><code>id</code></td>
+<td>string</td>
+<td>user ID</td>
 </tr>
 <tr>
-<td>code</td>
+<td><code>bvn</code></td>
 <td>string</td>
-<td>Status code</td>
+<td>Bank Verification Number</td>
 </tr>
 <tr>
-<td>message</td>
+<td><code>dateOfBirth</code></td>
+<td>date</td>
+<td>Date of Birth</td>
+</tr>
+<tr>
+<td><code>email</code></td>
 <td>string</td>
-<td>Shows a response message</td>
+<td>Email Address</td>
+</tr>
+<tr>
+<td><code>phoneNumber</code></td>
+<td>string</td>
+<td>Users Mobile Number</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td>Residential Address</td>
+</tr>
+<tr>
+<td><code>country</code></td>
+<td>string</td>
+<td>Country of Origin</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td>Country State</td>
+</tr>
+<tr>
+<td><code>progressLevel</code></td>
+<td>string</td>
+<td>Porgress level status</td>
+</tr>
+<tr>
+<td><code>isActive</code></td>
+<td>Boolean</td>
+<td>Active status of the user <em>(true,false)</em></td>
+</tr>
+<tr>
+<td><code>firstName</code></td>
+<td>string</td>
+<td>User first name</td>
+</tr>
+<tr>
+<td><code>middleName</code></td>
+<td>string</td>
+<td>User middle name</td>
+</tr>
+<tr>
+<td><code>lastName</code></td>
+<td>string</td>
+<td>User last name</td>
+</tr>
+<tr>
+<td><code>sector</code></td>
+<td>string</td>
+<td>Users Occupation</td>
+</tr>
+<tr>
+<td><code>industry</code></td>
+<td>string</td>
+<td>The company or industry where the user works</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td>string</td>
+<td>Nationality e.g <em>Nigerian,Ghanian,American...</em></td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>string</td>
+<td>Gender e.g <em>Male,female...</em></td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>Your name Title eg <em>Mr,Mrs,Miss</em></td>
+</tr>
+<tr>
+<td><code>interestedInLoanProducts</code></td>
+<td>string</td>
+<td>shows if user is interested in loan products or not</td>
+</tr>
+<tr>
+<td><code>maritalStatus</code></td>
+<td>string</td>
+<td>Marital status e.g <em>single,married...</em></td>
+</tr>
+<tr>
+<td><code>numberOfChildren</code></td>
+<td>string</td>
+<td>Number of Children the user have</td>
+</tr>
+<tr>
+<td><code>occupation</code></td>
+<td>string</td>
+<td>User Occupation</td>
+</tr>
+<tr>
+<td><code>hobby</code></td>
+<td>string</td>
+<td>User Hobby</td>
+</tr>
+<tr>
+<td><code>nokFirstName</code></td>
+<td>string</td>
+<td>The first name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokMiddleName</code></td>
+<td>string</td>
+<td>The Middle name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokFullName</code></td>
+<td>string</td>
+<td>The full name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokLastName</code></td>
+<td>string</td>
+<td>The last name of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokAddress</code></td>
+<td>string</td>
+<td>Address of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokPhoneNumber</code></td>
+<td>string</td>
+<td>Mobile Number of the Next Of Kin</td>
+</tr>
+<tr>
+<td><code>nokRelationship</code></td>
+<td>string</td>
+<td>The relationship between the Next Of Kin and the user e.g <em>Mother,Father,Aunt...</em></td>
+</tr>
+<tr>
+<td><code>employmentStatus</code></td>
+<td>string</td>
+<td>Employment status of the user e.g <em>self employed,retired,student..</em></td>
+</tr>
+<tr>
+<td><code>employerName</code></td>
+<td>string</td>
+<td>Name of Employer/Company</td>
+</tr>
+<tr>
+<td><code>employmentAddress</code></td>
+<td>string</td>
+<td>Address or employment</td>
+</tr>
+<tr>
+<td><code>addressTown</code></td>
+<td>string</td>
+<td>Town where employment is located</td>
+</tr>
+<tr>
+<td><code>addressState</code></td>
+<td>string</td>
+<td>State where employment is located</td>
+</tr>
+<tr>
+<td><code>addressLandmark</code></td>
+<td>string</td>
+<td>Landmark where employment is located <em>e.g kfc</em></td>
+</tr>
+<tr>
+<td><code>accountDetails</code></td>
+<td>object</td>
+<td><em>This hows the account details of the user, details of the user can be view below this table</em></td>
+</tr>
+<tr>
+<td><code>addedDate</code></td>
+<td>date-time</td>
+<td>Date of added Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>modifiedDate</code></td>
+<td>date-time</td>
+<td>Date of modified Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>sessionKey</code></td>
+<td>string</td>
+<td>The Session key of every transaction</td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td>user passport image directory</td>
+</tr>
+<tr>
+<td><code>validIdType</code></td>
+<td>string</td>
+<td>Type of Identification <em>eg: Drivers license</em></td>
+</tr>
+<tr>
+<td><code>validIdNumber</code></td>
+<td>string</td>
+<td>Valid Identification Number</td>
+</tr>
+<tr>
+<td><code>signature</code></td>
+<td>string</td>
+<td>User signature</td>
+</tr>
+<tr>
+<td><code>validId</code></td>
+<td>string</td>
+<td>Image directory of Valid Identifiaction</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>string</td>
+<td>the reference form file</td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>isDefaultPassword</code></td>
+<td>true</td>
+<td>Default Password status</td>
+</tr>
+<tr>
+<td><code>responseCode</code></td>
+<td>string</td>
+<td>The response result Code</td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>The response result message</td>
+</tr>
+</tbody>
+</table>
+<p>List of objects under <code>accountDetails</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>accountType</code></td>
+<td>string</td>
+<td>Account Type e.g <em>saving, current...</em></td>
+</tr>
+<tr>
+<td><code>userId</code></td>
+<td>string</td>
+<td>User ID number</td>
+</tr>
+<tr>
+<td><code>customerId</code></td>
+<td>string</td>
+<td>customers ID number</td>
+</tr>
+<tr>
+<td><code>accountName</code></td>
+<td>string</td>
+<td>Name of Account</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>Currency e.g <em>Naira, Dollars...</em></td>
+</tr>
+<tr>
+<td><code>addedDate</code></td>
+<td>date-time</td>
+<td>Date of added Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>modifiedDate</code></td>
+<td>date-time</td>
+<td>Date of modified Information  <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td>account passport image directory</td>
+</tr>
+<tr>
+<td><code>validIdType</code></td>
+<td>string</td>
+<td>Type of Identification <em>eg: Drivers license</em></td>
+</tr>
+<tr>
+<td><code>validIdNumber</code></td>
+<td>string</td>
+<td>Valid Identification Number</td>
+</tr>
+<tr>
+<td><code>validId</code></td>
+<td>string</td>
+<td>Image directory of Valid Identifiaction</td>
+</tr>
+<tr>
+<td><code>signature</code></td>
+<td>string</td>
+<td>User signature</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>string</td>
+<td>The reference form file</td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td>Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>sqNo</code></td>
+<td>integer <code>int32</code></td>
+<td>sequential number showing per beneficiary (Depends on how many beneficiary added)</td>
+</tr>
+<tr>
+<td><code>accountLinkCode</code></td>
+<td>string</td>
+<td>code number for linking account for joint account</td>
+</tr>
+<tr>
+<td><code>accountCategory</code></td>
+<td>number</td>
+<td>Account Category</td>
 </tr>
 </tbody>
 </table>
@@ -758,19 +921,19 @@ The wallet also supports foreign currencies (Dollar, Pound and Euro).</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                INTRODUCTION
               </div>
             </div>
           </a>
         
         
-          <a href="../create-wallet/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../signup/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Create Wallet
+                SIGN UP
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -809,8 +972,6 @@ The wallet also supports foreign currencies (Dollar, Pound and Euro).</p>
           }, typeof search !== "undefined" && search)
         })
       </script>
-      
-        <script src="../js/mermaid.min.js"></script>
       
     
   </body>

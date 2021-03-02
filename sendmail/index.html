@@ -9,19 +9,19 @@
       
       
       
-      <link rel="shortcut icon" href="/assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
-        <title>Online Account Opening API</title>
+        <title>**Send Mail** - Online Account Opening API</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
         
           
           
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#send-mail" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -70,9 +75,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="/." title="Online Account Opening API" class="md-header-nav__button md-logo" aria-label="Online Account Opening API">
+    <a href=".." title="Online Account Opening API" class="md-header-nav__button md-logo" aria-label="Online Account Opening API">
       
-  <img src="/img/logo.svg" alt="logo">
+  <img src="../img/logo.svg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -88,7 +93,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              
+              **Send Mail**
             
           </span>
         </div>
@@ -149,9 +154,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Online Account Opening API" class="md-nav__button md-logo" aria-label="Online Account Opening API">
+    <a href=".." title="Online Account Opening API" class="md-nav__button md-logo" aria-label="Online Account Opening API">
       
-  <img src="/img/logo.svg" alt="logo">
+  <img src="../img/logo.svg" alt="logo">
 
     </a>
     Online Account Opening API
@@ -167,7 +172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         INTRODUCTION
       </a>
     </li>
@@ -182,7 +187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         OVERVIEW
       </a>
     </li>
@@ -241,7 +246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/signup/" class="md-nav__link">
+      <a href="../signup/" class="md-nav__link">
         SIGN UP
       </a>
     </li>
@@ -253,7 +258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/signin/" class="md-nav__link">
+      <a href="../signin/" class="md-nav__link">
         SIGN IN
       </a>
     </li>
@@ -279,11 +284,181 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#send-continue-mail" class="md-nav__link">
+    Send Continue Mail
+  </a>
+  
+    <nav class="md-nav" aria-label="Send Continue Mail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#send-mail-attachment" class="md-nav__link">
+    Send Mail Attachment
+  </a>
+  
+    <nav class="md-nav" aria-label="Send Mail Attachment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                
+                <h1 id="send-mail"><strong>Send Mail</strong></h1>
+<h2 id="send-continue-mail">Send Continue Mail</h2>
+<div class="highlight"><pre><span></span><code>POST /api/User/SendContinueMail
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Only the Email will be passed to send a verification mail to continue sign up process
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</div>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Sends mail for the user to continue with the sign up process</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="send-mail-attachment">Send Mail Attachment</h2>
+<div class="highlight"><pre><span></span><code>POST /api/User/SendMailAttachment
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;subj&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;destinationEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;recieverFirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;base64Attachment&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;fileName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;addressesToCopy&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;customerName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;fromEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>subj</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Subject of email</td>
+</tr>
+<tr>
+<td><code>destinationEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>The designated email address</td>
+</tr>
+<tr>
+<td><code>recieverFirstName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Recievers first name</td>
+</tr>
+<tr>
+<td><code>base64Attachment</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  Email Attachments (base64 Encryption)</td>
+</tr>
+<tr>
+<td><code>fileName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  Name of the file attached</td>
+</tr>
+<tr>
+<td><code>addressesToCopy</code></td>
+<td>string</td>
+<td>Email address to copy</td>
+</tr>
+<tr>
+<td><code>customerName</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  provide customers name</td>
+</tr>
+<tr>
+<td><code>fromEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Senders email address</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
 
               
             </article>
@@ -310,15 +485,15 @@
       
     </div>
     
-      <script src="/assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="/assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "/",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "/assets/javascripts/worker/search.9c0e82ba.min.js"
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

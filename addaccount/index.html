@@ -1,0 +1,1355 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>**Add Account** - Online Account Opening API</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#546d78">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue-grey" data-md-color-accent="red">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#add-account" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Online Account Opening API" class="md-header-nav__button md-logo" aria-label="Online Account Opening API">
+      
+  <img src="../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Online Account Opening API
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              **Add Account**
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Online Account Opening API" class="md-nav__button md-logo" aria-label="Online Account Opening API">
+      
+  <img src="../img/logo.svg" alt="logo">
+
+    </a>
+    Online Account Opening API
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        INTRODUCTION
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        OVERVIEW
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        GET STARTED
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="GET STARTED" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          GET STARTED
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" >
+      
+      <label class="md-nav__link" for="nav-3-1">
+        USER
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="USER" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-1">
+          <span class="md-nav__icon md-icon"></span>
+          USER
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signup/" class="md-nav__link">
+        SIGN UP
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signin/" class="md-nav__link">
+        SIGN IN
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-joint-account-beneficiary-details" class="md-nav__link">
+    Add Joint Account Beneficiary Details
+  </a>
+  
+    <nav class="md-nav" aria-label="Add Joint Account Beneficiary Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses" class="md-nav__link">
+    Responses
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-onebank-joint-account-beneficiary-details" class="md-nav__link">
+    Add OneBank Joint Account Beneficiary Details
+  </a>
+  
+    <nav class="md-nav" aria-label="Add OneBank Joint Account Beneficiary Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses_1" class="md-nav__link">
+    Responses
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-director" class="md-nav__link">
+    Add Director
+  </a>
+  
+    <nav class="md-nav" aria-label="Add Director">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-signature" class="md-nav__link">
+    Add Signature
+  </a>
+  
+    <nav class="md-nav" aria-label="Add Signature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="add-account"><strong>Add Account</strong></h1>
+<h2 id="add-joint-account-beneficiary-details">Add Joint Account Beneficiary Details</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/AddJointAccountBeneficiaryDetails
+</code></pre></div>
+<p>The method lets users add a joint account for beneficiary</p>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;passportPhoto&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validIdType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validIdNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validId&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-12-10T11:33:19.041Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;initiatorEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Bank verification Number Details of Beneficiary</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Email address of Beneficiary</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiaries password</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td><font color="red">*required</font><br> Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>passportPhoto</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> passport photograph of beneficiary</td>
+</tr>
+<tr>
+<td><code>validIdType</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Type of Identification <em>eg: Drivers license</em></td>
+</tr>
+<tr>
+<td><code>validIdNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Valid Identification Number based on the ID Type given</td>
+</tr>
+<tr>
+<td><code>signature</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiary signature</td>
+</tr>
+<tr>
+<td><code>validId</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Valid Identification</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> the reference form file</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Beneficiary Email address</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red"> *required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>initiatorEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  Email of the users adding a Beneficiary</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiary account number</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">Result</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;isSuccessful&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>isSuccessful</code></td>
+<td>boolean</td>
+<td>shows true if is successfull</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>email address</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>shows a response message</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="add-onebank-joint-account-beneficiary-details">Add OneBank Joint Account Beneficiary Details</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/AddOneBankJointAccountBeneficiaryDetails
+</code></pre></div>
+<p>The method lets users add OneBank joint account for beneficiaries.</p>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;emailAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;jointAccountTransferLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;dateOfBirth&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-02-20T12:37:27.465Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;initiatorEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>Bank verification Number Details of Beneficiary</td>
+</tr>
+<tr>
+<td><code>emailAddress</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Email address of Beneficiary</td>
+</tr>
+<tr>
+<td><code>jointAccountTransferLimit</code></td>
+<td>number</td>
+<td><font color="red">*required</font><br> Limit of how much user can transfer</td>
+</tr>
+<tr>
+<td><code>dateOfBirth</code></td>
+<td>date-time</td>
+<td><font color="red"> *required</font><br> The Date of Birth using the following format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>initiatorEmail</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br>  Email of the users adding a Beneficiary</td>
+</tr>
+<tr>
+<td><code>accountNumber</code></td>
+<td>string</td>
+<td><font color="red">*required</font><br> Beneficiary account number</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responses_1">Responses</h3>
+<div class="admonition example">
+<p class="admonition-title">Result</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;isSuccessful&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;bvN_Lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;responseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+</div>
+<table>
+<thead>
+<tr>
+<th><code>200</code> Schema</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>isSuccessful</code></td>
+<td>boolean</td>
+<td>shows true if is successfull</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Firstname</code></td>
+<td>string</td>
+<td>First name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>bvN_Lastname</code></td>
+<td>string</td>
+<td>Last name of Bank Verification Number</td>
+<td></td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>email address</td>
+<td></td>
+</tr>
+<tr>
+<td><code>responseDescription</code></td>
+<td>string</td>
+<td>shows a response message</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="add-director">Add Director</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/AddDirector
+</code></pre></div>
+<p>The method lets users add director.</p>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;accountno&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;middlename&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;commerceName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;corpLegalForm&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;incorporationNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;incorporationDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:57:47.889Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;incorpState&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;incorporationCountry&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;birthDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:57:47.889Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;birthPlace&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;motherName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ssn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;director_means_of_id&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;passportNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;passportCity&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;identificationType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;countryOfIdentification&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;identificationNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;town&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;zipCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;nationality&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;occupation&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;employerName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;employerAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;employerPhone&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;businessClose&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;taxNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;taxRegNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;wealthSource&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;comments&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;accountRole&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;entityRole&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;entityType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;bvn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;createdByAdUsername&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>accountno</code></td>
+<td>string</td>
+<td>Account Number</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>Add title</td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>string</td>
+<td>Gender eg Male,Female</td>
+</tr>
+<tr>
+<td><code>firstname</code></td>
+<td>string</td>
+<td>First Name</td>
+</tr>
+<tr>
+<td><code>middlename</code></td>
+<td>string</td>
+<td>Middle Name</td>
+</tr>
+<tr>
+<td><code>lastname</code></td>
+<td>string</td>
+<td>Last Name</td>
+</tr>
+<tr>
+<td><code>commerceName</code></td>
+<td>string</td>
+<td>Commerce Name</td>
+</tr>
+<tr>
+<td><code>corpLegalForm</code></td>
+<td>string</td>
+<td>Corporation Legal form</td>
+</tr>
+<tr>
+<td><code>incorporationNumber</code></td>
+<td>string</td>
+<td>Incorporation Number</td>
+</tr>
+<tr>
+<td><code>incorporationDate</code></td>
+<td>date-time</td>
+<td>Incorporation date, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>incorpState</code></td>
+<td>string</td>
+<td>State of Incorporation</td>
+</tr>
+<tr>
+<td><code>incorporationCountry</code></td>
+<td>string</td>
+<td>Country of Incorporation</td>
+</tr>
+<tr>
+<td><code>birthDate</code></td>
+<td>date-time</td>
+<td>Date of Birth, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>birthPlace</code></td>
+<td>string</td>
+<td>Place of birth</td>
+</tr>
+<tr>
+<td><code>motherName</code></td>
+<td>string</td>
+<td>Mother's name</td>
+</tr>
+<tr>
+<td><code>alias</code></td>
+<td>string</td>
+<td>alias</td>
+</tr>
+<tr>
+<td><code>ssn</code></td>
+<td>string</td>
+<td>Social Security Number</td>
+</tr>
+<tr>
+<td><code>director_means_of_id</code></td>
+<td>string</td>
+<td>Director means of Identification</td>
+</tr>
+<tr>
+<td><code>passportNumber</code></td>
+<td>string</td>
+<td>Passport Number</td>
+</tr>
+<tr>
+<td><code>passportCity</code></td>
+<td>string</td>
+<td>Passport City</td>
+</tr>
+<tr>
+<td><code>countryOfIdentification</code></td>
+<td>string</td>
+<td>Country of identification</td>
+</tr>
+<tr>
+<td><code>identificationType</code></td>
+<td>string</td>
+<td>Type of Identification. e.g  Voter card, National ID</td>
+</tr>
+<tr>
+<td><code>identificationNumber</code></td>
+<td>string</td>
+<td>Identification</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td>residential Address</td>
+</tr>
+<tr>
+<td><code>town</code></td>
+<td>string</td>
+<td>town located</td>
+</tr>
+<tr>
+<td><code>city</code></td>
+<td>string</td>
+<td>city located</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td>State located</td>
+</tr>
+<tr>
+<td><code>zipCode</code></td>
+<td>string</td>
+<td>ZIP code of location</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td>string</td>
+<td>Nationality e.g Nigerian, Ghanian, German e.t.c</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>Email Address</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td><code>occupation</code></td>
+<td>string</td>
+<td>Occupation</td>
+</tr>
+<tr>
+<td><code>employerName</code></td>
+<td>string</td>
+<td>Employers name</td>
+</tr>
+<tr>
+<td><code>employerAddress</code></td>
+<td>string</td>
+<td>Employers address</td>
+</tr>
+<tr>
+<td><code>employerPhone</code></td>
+<td>string</td>
+<td>Employers Mobile Number</td>
+</tr>
+<tr>
+<td><code>businessClose</code></td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td><code>taxNumber</code></td>
+<td>string</td>
+<td>Tax Number</td>
+</tr>
+<tr>
+<td><code>taxRegNumber</code></td>
+<td>string</td>
+<td>Tax Registration Number</td>
+</tr>
+<tr>
+<td><code>wealthSource</code></td>
+<td>string</td>
+<td>Wealth source</td>
+</tr>
+<tr>
+<td><code>comments</code></td>
+<td>string</td>
+<td>additional comment</td>
+</tr>
+<tr>
+<td><code>accountRole</code></td>
+<td>string</td>
+<td>Account Role</td>
+</tr>
+<tr>
+<td><code>entityRole</code></td>
+<td>string</td>
+<td>Entity role</td>
+</tr>
+<tr>
+<td><code>entityType</code></td>
+<td>string</td>
+<td>Entity type</td>
+</tr>
+<tr>
+<td><code>bvn</code></td>
+<td>string</td>
+<td>Bank Verification Number</td>
+</tr>
+<tr>
+<td><code>createdByAdUsername</code></td>
+<td>string</td>
+<td>The username of the user who used the menthod</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="add-signature">Add Signature</h2>
+<div class="highlight"><pre><span></span><code>  POST /api/User/AddSignatory
+</code></pre></div>
+<p>The method lets users add signature.</p>
+<div class="admonition example">
+<p class="admonition-title">Exmample Value</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;accountno&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;firstname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;middlename&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;lastname&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;occupation&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;isForeigner&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">&quot;dateArrivalOfForeigner&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:56:06.225Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;permitValidityStartDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:56:06.225Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;permitExpiryDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:56:06.225Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;permitNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;visaNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;commerceName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;corpLegalForm&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;incorporationNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;incorporationDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:56:06.225Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;incorpState&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;incorporationCountry&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;birthDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:56:06.225Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;birthPlace&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;motherName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ssn&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;director_means_of_id&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;passportNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;passportIssueDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:56:06.225Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;passportExpiryDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:56:06.225Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;passportCity&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;identificationType&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;countryOfIdentification&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;identificationNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;identificationIssuerAuthority&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;identificationExpiryDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-21T10:56:06.225Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;identificationState&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;identificationCountry&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;town&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;zipCode&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;nationality&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;employerName&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;employerAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;employerPhone&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;target&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;createdByAdUsername&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>&nbsp;</p>
+
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>accountno</code></td>
+<td>string</td>
+<td>Account Number</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>Add title</td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>string</td>
+<td>Gender eg Male,Female</td>
+</tr>
+<tr>
+<td><code>firstname</code></td>
+<td>string</td>
+<td>First Name</td>
+</tr>
+<tr>
+<td><code>middlename</code></td>
+<td>string</td>
+<td>Middle Name</td>
+</tr>
+<tr>
+<td><code>lastname</code></td>
+<td>string</td>
+<td>Last Name</td>
+</tr>
+<tr>
+<td><code>occupation</code></td>
+<td>string</td>
+<td>Occupation</td>
+</tr>
+<tr>
+<td><code>isForeigner</code></td>
+<td>boolean</td>
+<td>Gives <strong>true</strong> is user is a foreigner and <strong>false</strong> is not.</td>
+</tr>
+<tr>
+<td><code>dateArrivalOfForeigner</code></td>
+<td>date-time</td>
+<td>The arrival date of foreigner, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>permitValidityStartDate</code></td>
+<td>date-time</td>
+<td>Foreingers permit validity start date, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>permitExpiryDate</code></td>
+<td>date-time</td>
+<td>Foreingers permit validity expiry date, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>permitNumber</code></td>
+<td>string</td>
+<td>Permit number</td>
+</tr>
+<tr>
+<td><code>visaNumber</code></td>
+<td>string</td>
+<td>VISA number</td>
+</tr>
+<tr>
+<td><code>commerceName</code></td>
+<td>string</td>
+<td>Commerce Name</td>
+</tr>
+<tr>
+<td><code>corpLegalForm</code></td>
+<td>string</td>
+<td>Corporation Legal form</td>
+</tr>
+<tr>
+<td><code>incorporationNumber</code></td>
+<td>string</td>
+<td>Incorporation Number</td>
+</tr>
+<tr>
+<td><code>incorporationDate</code></td>
+<td>date-time</td>
+<td>Incorporation date, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>incorpState</code></td>
+<td>string</td>
+<td>State of Incorporation</td>
+</tr>
+<tr>
+<td><code>incorporationCountry</code></td>
+<td>string</td>
+<td>Country of Incorporation</td>
+</tr>
+<tr>
+<td><code>birthDate</code></td>
+<td>date-time</td>
+<td>Date of Birth, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>birthPlace</code></td>
+<td>string</td>
+<td>Place of birth</td>
+</tr>
+<tr>
+<td><code>motherName</code></td>
+<td>string</td>
+<td>Mother's name</td>
+</tr>
+<tr>
+<td><code>alias</code></td>
+<td>string</td>
+<td>alias</td>
+</tr>
+<tr>
+<td><code>ssn</code></td>
+<td>string</td>
+<td>Social Security Number</td>
+</tr>
+<tr>
+<td><code>director_means_of_id</code></td>
+<td>string</td>
+<td>Director means of Identification</td>
+</tr>
+<tr>
+<td><code>passportNumber</code></td>
+<td>string</td>
+<td>Passport Number</td>
+</tr>
+<tr>
+<td><code>passportIssueDate</code></td>
+<td>date-time</td>
+<td>Date passport was issued, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>passportExpiryDate</code></td>
+<td>date-time</td>
+<td>Date passport expires, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>passportCity</code></td>
+<td>string</td>
+<td>Passport City</td>
+</tr>
+<tr>
+<td><code>identificationType</code></td>
+<td>string</td>
+<td>Type of Identification. e.g  Voter card, National ID</td>
+</tr>
+<tr>
+<td><code>countryOfIdentification</code></td>
+<td>string</td>
+<td>Country of identification</td>
+</tr>
+<tr>
+<td><code>identificationNumber</code></td>
+<td>string</td>
+<td>Idenfication</td>
+</tr>
+<tr>
+<td><code>identificationIssuerAuthority</code></td>
+<td>string</td>
+<td>Identification issuer Authority</td>
+</tr>
+<tr>
+<td><code>identificationExpiryDate</code></td>
+<td>date-time</td>
+<td>Identification expiring date, format YYYY-MM-DDTHH:MM:SSZ <br> <em>example - <code>2019-11-20T13:26:22.326Z</code></em></td>
+</tr>
+<tr>
+<td><code>identificationState</code></td>
+<td>string</td>
+<td>State of identification</td>
+</tr>
+<tr>
+<td><code>identificationCountry</code></td>
+<td>string</td>
+<td>country of identification</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td>residential Address</td>
+</tr>
+<tr>
+<td><code>town</code></td>
+<td>string</td>
+<td>town located</td>
+</tr>
+<tr>
+<td><code>city</code></td>
+<td>string</td>
+<td>city located</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td>State located</td>
+</tr>
+<tr>
+<td><code>zipCode</code></td>
+<td>string</td>
+<td>ZIP code of location</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td>string</td>
+<td>Nationality e.g Nigerian, Ghanian, German e.t.c</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>string</td>
+<td>Email Address</td>
+</tr>
+<tr>
+<td><code>employerName</code></td>
+<td>string</td>
+<td>Employers name</td>
+</tr>
+<tr>
+<td><code>employerAddress</code></td>
+<td>string</td>
+<td>Employers address</td>
+</tr>
+<tr>
+<td><code>employerPhone</code></td>
+<td>string</td>
+<td>Employers Mobile Number</td>
+</tr>
+<tr>
+<td><code>target</code></td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td><code>createdByAdUsername</code></td>
+<td>string</td>
+<td>The username of the user who used the menthod</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
